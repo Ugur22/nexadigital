@@ -10,8 +10,9 @@ export default function Logo(props) {
                 <Text fontSize="lg" fontWeight="bold">
                     <Image
                         borderRadius='full'
-                        boxSize='50'
-                        src='https://static-00.iconduck.com/assets.00/nextjs-icon-256x256-ao9n7qsm.png'
+                        width={180}
+                        height={100}
+                        src='img/nexa-logo.svg'
                         alt='logo NexaDigital'
                     />
                 </Text>
