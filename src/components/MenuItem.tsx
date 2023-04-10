@@ -1,13 +1,17 @@
 import React, { forwardRef } from 'react'
 import { Link, Text } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { useRouter } from 'next/router';
 
-const MenuItem = ({ children, linkColor, linkHoverColor, isLast, to = "/", ...rest }, ref) => {
+const MenuItem = ({ children, linkColor, linkHoverColor, isLast, to = "/", ...rest }, _ref) => {
+
+    const router = useRouter();
+
     return (
-        <Link
+        <Link className={router.pathname == to ? "active" : ""}
             fontSize={'sm'}
             fontWeight={500}
-            color={linkColor}
+            color="#FFF"
             _hover={{
                 textDecoration: 'none',
                 color: linkHoverColor,

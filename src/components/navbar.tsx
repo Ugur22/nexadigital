@@ -29,14 +29,13 @@ export default function navbar() {
     const { isOpen, onToggle } = useDisclosure();
 
     return (
-        <Box>
+        <Box className='header-nav'>
             <Flex
-                bg={useColorModeValue('white', 'gray.800')}
-                color={useColorModeValue('gray.600', 'white')}
-                minH={'60px'}
-                py={{ base: 2 }}
-                px={{ base: 4 }}
+                bg="#1e272e"
+                color={useColorModeValue('white.600', 'white')}
+                height={'100'}
                 borderBottom={1}
+                p={4}
                 borderStyle={'solid'}
                 borderColor={useColorModeValue('gray.200', 'gray.900')}
                 align={'center'}>
@@ -87,8 +86,8 @@ export default function navbar() {
 }
 
 const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
-    const linkHoverColor = useColorModeValue('gray.800', 'white');
+    const linkColor = useColorModeValue('white.600', 'gray.200');
+    const linkHoverColor = useColorModeValue('white.800', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
     return (
