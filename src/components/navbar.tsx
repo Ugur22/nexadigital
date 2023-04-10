@@ -61,19 +61,9 @@ export default function navbar() {
                     justify={'flex-end'}
                     direction={'row'}
                     spacing={6}>
-                    <Button
-                        as={'a'}
-                        display={{ base: 'none', md: 'inline-flex' }}
-                        fontSize={'sm'}
-                        fontWeight={600}
-                        color={'white'}
-                        bg={'orange.400'}
-                        href={'#'}
-                        _hover={{
-                            bg: 'orange.300',
-                        }}>
-                        Contact Us
-                    </Button>
+                <Button rounded={'full'} px={6}>
+                            Contact Us
+                        </Button>
                 </Stack>
             </Flex>
             <Collapse in={isOpen} animateOpacity>

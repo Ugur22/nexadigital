@@ -9,7 +9,7 @@ const MenuItem = ({ children, linkColor, linkHoverColor, isLast, to = "/", ...re
 
     return (
         <Link className={router.pathname == to ? "active" : ""}
-            fontSize={'sm'}
+            fontSize={'md'}
             fontWeight={500}
             color="#FFF"
             _hover={{

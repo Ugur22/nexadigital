@@ -50,7 +50,7 @@ export default function Hero() {
             <Container maxWidth={'100%'} >
                 <Box display={'flex'} pr={{ base: 0, lg: 20 }}  justifyContent={{ base: 'center', md: 'end' }} alignItems={'center'}>
                     <Image
-                        src='img/hero.svg'
+                        src='img/wireframing.svg'
                         boxSize={{ base: 300, md: 400 }}
                         alt='Hero cta '
                     />
