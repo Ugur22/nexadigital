@@ -7,16 +7,15 @@ html {
 body {
   font-family: sans-serif;
   line-height: 1.6;
+  background-image: url('/img/blob-hero.svg')!important;
+  background-size: cover!important;
+  background-attachment: fixed!important;
 }
 
 
 main {
   max-width:  1440px;
-  padding: 16px
-}
-
-footer {
-  padding: 16px;
+  /* padding: 16px */
 }
 
 .header-nav a.active {

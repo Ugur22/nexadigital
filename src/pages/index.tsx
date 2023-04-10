@@ -1,9 +1,12 @@
+import {
+  Container,
+} from '@chakra-ui/react';
+import Hero from "../components/Hero"
+
 export default function Home(props) {
   return (
-    <div>
-      <h2>Welcome to our homepage.</h2>
-      <p>This is the best home page in the world. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aspernatur illum architecto cumque recusandae fuga sequi necessitatibus deleniti repellat harum nobis, dolor veniam vero deserunt. Voluptatibus, ducimus deserunt. Recusandae, dolore.</p>
-      <p>The weather: {props.forecast}</p>
+    <div className="homepage">
+        <Hero></Hero>
     </div>
   )
 }

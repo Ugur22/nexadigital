@@ -31,13 +31,11 @@ export default function navbar() {
     return (
         <Box className='header-nav'>
             <Flex
-                bg="#1e272e"
+                bg="transparant"
                 color={useColorModeValue('white.600', 'white')}
                 height={'100'}
-                borderBottom={1}
+                borderRadius={0}
                 p={4}
-                borderStyle={'solid'}
-                borderColor={useColorModeValue('gray.200', 'gray.900')}
                 align={'center'}>
                 <Flex
                     flex={{ base: 1, md: 'auto' }}
@@ -46,7 +44,7 @@ export default function navbar() {
                     <IconButton
                         onClick={onToggle}
                         icon={
-                            isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+                            isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} color={"#FFF"} />
                         }
                         variant={'ghost'}
                         aria-label={'Toggle Navigation'}
@@ -159,6 +157,8 @@ const MobileNav = () => {
         <Stack
             bg={useColorModeValue('white', 'gray.800')}
             p={4}
+            position={"fixed"}
+            width={'100%'}
             display={{ md: 'none' }}>
             {NAV_ITEMS.map((navItem) => (
                 <MobileNavItem key={navItem.label} {...navItem} />
