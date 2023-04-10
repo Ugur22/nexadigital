@@ -1,7 +1,8 @@
 import React from 'react'
+import { Container } from "@chakra-ui/react"
 
 export default function showcases() {
   return (
-    <div>showcases</div>
+    <Container>showcases</Container>
   )
 }

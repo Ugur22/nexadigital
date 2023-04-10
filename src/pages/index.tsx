@@ -2,11 +2,14 @@ import {
   Container,
 } from '@chakra-ui/react';
 import Hero from "../components/Hero"
+import ServicesBlock from '../components/ServicesBlock';
+
 
 export default function Home(props) {
   return (
     <div className="homepage">
-        <Hero></Hero>
+      <Hero></Hero>
+      <ServicesBlock></ServicesBlock>
     </div>
   )
 }

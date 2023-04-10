@@ -1,7 +1,9 @@
 import React from 'react'
+import { Container } from "@chakra-ui/react"
+
 
 export default function technologies() {
   return (
-    <div>technologies</div>
+    <Container>technologies</Container>
   )
 }

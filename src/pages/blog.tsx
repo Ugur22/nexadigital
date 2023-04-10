@@ -1,8 +1,9 @@
+import { Container } from '@chakra-ui/react'
 import Link from 'next/link'
 
 export default function Blog(props) {
     return (
-      <>
+      <Container>
         <h2>The Blog</h2>
         {props.posts.map((post, index) => {
           return (
@@ -15,7 +16,7 @@ export default function Blog(props) {
             </div>
           )
         })}
-      </>
+      </Container>
     )
   }
   

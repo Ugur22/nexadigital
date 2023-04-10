@@ -11,7 +11,7 @@ import {
 
 export default function Hero() {
     return (
-        <div>
+        <div className='hero-block' >
             <Container>
                 <Stack
                     textAlign={'center'}
