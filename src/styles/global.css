@@ -13,7 +13,7 @@ body {
 }
 
 .hero-block {
-  height: calc(100vh - 150px);
+  height: calc(100vh);
 }
 
 .header-nav a.active {

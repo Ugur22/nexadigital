@@ -47,8 +47,7 @@ export default function Footer() {
     <Box
       boxShadow='dark-lg'
       bg="#1e272e"
-      bottom={0}
-      position={'fixed'}
+      position={'relative'}
       width="100%"
       height={'60px'}
       color={'#FFF'}>
