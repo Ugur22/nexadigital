@@ -11,13 +11,13 @@ import {
 
 export default function Hero() {
     return (
-        <Box className='hero-block' background={{ base: '#1e272e', md: 'url(img/blob-hero.svg)' }} >
+        <Box className='hero-block' height={{ base: 'calc(100vh - 100px)', sm: '100vh' }} justifyContent={'center'} background={{ base: '#1e272e', md: 'url(img/blob-hero.svg)' }} >
             <Container>
                 <Stack
                     align={'center'}
                     spacing={{ base: 8, md: 10 }}
                     borderRadius={0}
-                    py={{ base: 10, md: 24 }}>
+                    py={{ base: 10 }} pb={{ sm: 10 }} pt={{ md: 28 }}>
                     <Heading
                         fontWeight={600}
                         color={'#FFF'}
@@ -48,11 +48,11 @@ export default function Hero() {
                 </Stack>
             </Container >
             <Container maxWidth={'100%'} pt={{ base: 5, md: 0 }}>
-                <Box display={'flex'} pr={{ base: 0, lg: 20 }} justifyContent={{ base: 'flex-center', md: 'flex-end' }}>
+                <Box display={'flex'} justifyContent={{ base: 'center', md: 'flex-end' }}>
                     <Image
-                        src='img/wireframing.svg'
-                        width={{ base: '100%', md: 400 }}
-                        height={{ base: 300, md: 400 }}
+                        src='img/hero-image.svg'
+                        width={{ base: '100%', md: 500 }}
+                        height={{ base: 300, md: 500 }}
                         alt='Hero cta '
                     />
                 </Box>

@@ -16,11 +16,9 @@ body {
   background-attachment: scroll !important;
   background-repeat: no-repeat !important;
   background-position: center top !important;
-  height: 100vh;
-
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: center;
   align-items: center;
 }
 
