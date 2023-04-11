@@ -16,6 +16,11 @@ body {
   background-attachment: scroll !important;
   background-repeat: no-repeat !important;
   background-position: center top !important;
+
+}
+
+.blur {
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   justify-content: center;

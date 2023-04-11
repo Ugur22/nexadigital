@@ -33,7 +33,7 @@ export default function Navigation() {
     const router = useRouter();
 
     return (
-        <Box className='header-nav' position={{ base: 'relative', sm: router.pathname == "/" ? 'absolute' : 'relative' }} bg={{ base: '#1e272e', sm: router.pathname == "/" ? 'transparent' : '#1e272e' }} boxShadow={{ base: 'md', md: 'none' }} >
+        <Box className='header-nav' position={{ base: 'relative', sm: router.pathname == "/" ? 'absolute' : 'relative' }} bg={{ base: '#1e272e', md: router.pathname == "/" ? 'transparent' : '#1e272e' }} boxShadow={{ base: 'md', md: 'none' }} >
             <Flex
                 color={useColorModeValue('white.600', 'white')}
                 height={'100'}
