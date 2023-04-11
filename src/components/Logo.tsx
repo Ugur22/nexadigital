@@ -10,8 +10,9 @@ export default function Logo(props) {
                 <Image
                     width={180}
                     height={100}
-                    src='img/logo-nexaDigital.svg'
-                    alt='logo NexaDigital'
+                    src='img/nexaDigital-logo.svg'
+                    alt='NexaDigital'
+                    title="Nexa Digital Digital made simple"
                 />
             </Link>
         </Box>
