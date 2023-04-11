@@ -10,12 +10,6 @@ body {
   background-image: url('/img/blob-hero.svg')!important;
   background-size: cover!important;
   background-attachment: fixed!important;
-  padding-bottom: 100px;
-}
-
-
-.chakra-container {
-  /* max-width:  1440px!important; */
 }
 
 .hero-block {
