@@ -195,8 +195,8 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
                     pt={[4, 4, 0, 0]}
                 >
                     {children &&
-                        children.map((child) => (
-                            <MenuItem linkColor={undefined} linkHoverColor={undefined} to={child.href} isLast={undefined}>{child.label}</MenuItem>
+                        children.map((child,index) => (
+                            <MenuItem key={index} linkColor={undefined} linkHoverColor={undefined} to={child.href} isLast={undefined}>{child.label}</MenuItem>
                         ))}
 
 
