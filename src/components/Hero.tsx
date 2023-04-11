@@ -48,7 +48,7 @@ export default function Hero() {
                 </Stack>
             </Container >
             <Container maxWidth={'100%'} >
-                <Box display={'flex'} pr={{ base: 0, lg: 20 }}  justifyContent={{ base: 'center', md: 'end' }} alignItems={'center'}>
+                <Box display={'flex'} pr={{ base: 0, lg: 20 }}  justifyContent={{ base: 'center', md: 'center' }} alignItems={'center'}>
                     <Image
                         src='img/wireframing.svg'
                         boxSize={{ base: 300, md: 400 }}

@@ -60,7 +60,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
 
 export default function ServicesBlock() {
     return (
-        <Box p={4} color="#1e272e" py={6}
+        <Box p={4} color="#1e272e" py={20}
             bg={'#FFF'}>
             <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
                 <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>

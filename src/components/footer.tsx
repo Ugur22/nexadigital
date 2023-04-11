@@ -50,7 +50,7 @@ export default function footer() {
       bottom={0}
       position={'fixed'}
       width="100%"
-      height={'100px'}
+      height={'60px'}
       color={'#FFF'}>
       <Container
         as={Stack}
