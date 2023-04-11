@@ -29,9 +29,8 @@ export default function Navigation() {
     const { isOpen, onToggle } = useDisclosure();
 
     return (
-        <Box className='header-nav'>
+        <Box className='header-nav' bg={{ base: '#1e272e', sm: 'transparent' }} boxShadow={{ base: 'md', md: 'none' }} >
             <Flex
-                bg="transparant"
                 color={useColorModeValue('white.600', 'white')}
                 height={'100'}
                 borderRadius={0}
@@ -56,14 +55,14 @@ export default function Navigation() {
                         <DesktopNav />
                     </Flex>
                 </Flex>
-                <Stack
+                <Stack display={{ base: 'none', md: 'block' }}
                     flex={{ base: 1, md: 0 }}
                     justify={'flex-end'}
                     direction={'row'}
                     spacing={6}>
-                <Button rounded={'full'} px={6}>
-                            Contact Us
-                        </Button>
+                    <Button rounded={'full'} transition="all .4s ease" px={6} >
+                        Contact Us
+                    </Button>
                 </Stack>
             </Flex>
             <Collapse in={isOpen} animateOpacity>
@@ -195,7 +194,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
                     pt={[4, 4, 0, 0]}
                 >
                     {children &&
-                        children.map((child,index) => (
+                        children.map((child, index) => (
                             <MenuItem key={index} linkColor={undefined} linkHoverColor={undefined} to={child.href} isLast={undefined}>{child.label}</MenuItem>
                         ))}
 

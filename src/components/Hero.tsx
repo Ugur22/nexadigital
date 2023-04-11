@@ -11,14 +11,13 @@ import {
 
 export default function Hero() {
     return (
-        <div className='hero-block' >
+        <Box className='hero-block' background={{ base: '#1e272e', md: 'url(img/blob-hero.svg)' }} >
             <Container>
                 <Stack
-                    textAlign={'center'}
                     align={'center'}
                     spacing={{ base: 8, md: 10 }}
                     borderRadius={0}
-                    py={{ base: 15, md: 27 }}>
+                    py={{ base: 15, md: 24 }}>
                     <Heading
                         fontWeight={600}
                         color={'#FFF'}
@@ -38,25 +37,27 @@ export default function Hero() {
                             px={6}
                             colorScheme={'orange'}
                             bg={'orange.400'}
+                            transition="all .4s ease"
                             _hover={{ bg: 'orange.500' }}>
                             Contact Us
                         </Button>
-                        <Button rounded={'full'} px={6}>
+                        <Button rounded={'full'} transition="all .4s ease" px={6}>
                             Our Projects
                         </Button>
                     </Stack>
                 </Stack>
             </Container >
-            <Container maxWidth={'100%'} >
-                <Box display={'flex'} pr={{ base: 0, lg: 20 }}  justifyContent={{ base: 'center', md: 'center' }} alignItems={'center'}>
+            <Container maxWidth={'100%'} pt={{ base: 10, md: 0 }}>
+                <Box display={'flex'} pr={{ base: 0, lg: 20 }} justifyContent={{ base: 'flex-center', md: 'flex-end' }}>
                     <Image
                         src='img/wireframing.svg'
-                        boxSize={{ base: 300, md: 400 }}
+                        width={{ base: '100%', md: 400 }}
+                        height={{ base: 300, md: 400 }}
                         alt='Hero cta '
                     />
                 </Box>
             </Container>
-        </div >
+        </Box >
     );
 }
 
