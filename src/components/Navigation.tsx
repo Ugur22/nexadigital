@@ -24,12 +24,18 @@ import {
 import Logo from './Logo';
 import MenuItem from './MenuItem';
 
+import { useRouter } from 'next/router';
+
 
 export default function Navigation() {
     const { isOpen, onToggle } = useDisclosure();
 
+    const router = useRouter();
+
+    //{router.pathname ==
+
     return (
-        <Box className='header-nav' bg={{ base: '#1e272e', sm: 'transparent' }} boxShadow={{ base: 'md', md: 'none' }} >
+        <Box className='header-nav' position={router.pathname == "/" ? 'absolute' : 'relative'} bg={{ base: '#1e272e', sm: router.pathname == "/" ? 'transparent' : '#1e272e' }} boxShadow={{ base: 'md', md: 'none' }} >
             <Flex
                 color={useColorModeValue('white.600', 'white')}
                 height={'100'}

@@ -12,7 +12,7 @@ const theme = extendTheme({
     global: {
       // styles for the `body`
       body: {
-        color: 'white',
+        color: '#000',
       },
       // styles for the `a`
       button: {
