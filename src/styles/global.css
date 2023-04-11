@@ -12,8 +12,13 @@ body {
   background-attachment: fixed!important;
 }
 
+
 .hero-block {
   height: calc(100vh);
+}
+
+.homepage {
+  margin-bottom: 60px;
 }
 
 .header-nav a.active {
