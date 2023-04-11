@@ -4,6 +4,6 @@ import { Container } from "@chakra-ui/react"
 
 export default function technologies() {
   return (
-    <Container>technologies</Container>
+    <Container mt={5}>Technologies</Container>
   )
 }

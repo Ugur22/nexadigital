@@ -17,7 +17,7 @@ export default function Hero() {
                     align={'center'}
                     spacing={{ base: 8, md: 10 }}
                     borderRadius={0}
-                    py={{ base: 15, md: 24 }}>
+                    py={{ base: 10, md: 24 }}>
                     <Heading
                         fontWeight={600}
                         color={'#FFF'}
@@ -47,7 +47,7 @@ export default function Hero() {
                     </Stack>
                 </Stack>
             </Container >
-            <Container maxWidth={'100%'} pt={{ base: 10, md: 0 }}>
+            <Container maxWidth={'100%'} pt={{ base: 5, md: 0 }}>
                 <Box display={'flex'} pr={{ base: 0, lg: 20 }} justifyContent={{ base: 'flex-center', md: 'flex-end' }}>
                     <Image
                         src='img/wireframing.svg'

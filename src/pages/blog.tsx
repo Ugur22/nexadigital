@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Blog(props) {
     return (
-      <Container>
+      <Container mt={5}>
         <h2>The Blog</h2>
         {props.posts.map((post, index) => {
           return (

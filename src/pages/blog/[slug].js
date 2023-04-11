@@ -1,11 +1,12 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import styles from "../../styles/post.module.css"
+import { Container } from '@chakra-ui/react'
 
 export default function Post(props) {
   const router = useRouter()
   return (
-    <>
+    <Container mt={5}>
       <p>
         <Link href="/blog">
           <small>&laquo; back to all blog posts</small>
@@ -16,7 +17,7 @@ export default function Post(props) {
       <button className={styles.button} onClick={() => router.push("/blog")}>
         Click me to programmatically navigate or redirect
       </button>
-    </>
+    </Container>
   )
 }
 

@@ -20,7 +20,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 
@@ -34,8 +34,6 @@ body {
   right: 0;
   z-index: 30;
   top: 0;
-
-  margin-bottom: 1rem;
 }
 
 .header-nav a.active {
