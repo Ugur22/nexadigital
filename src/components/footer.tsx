@@ -42,7 +42,7 @@ const SocialButton = ({
   );
 };
 
-export default function footer() {
+export default function Footer() {
   return (
     <Box
       boxShadow='dark-lg'

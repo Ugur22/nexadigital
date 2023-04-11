@@ -25,7 +25,7 @@ import Logo from './Logo';
 import MenuItem from './MenuItem';
 
 
-export default function navbar() {
+export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
 
     return (
