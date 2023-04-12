@@ -42,7 +42,7 @@ export default function ShowCases() {
                         and content creation to see how we have helped our clients overcome challenges and drive growth.
                     </Text>
                 </Stack>
-                <Box display={'flex'} alignItems={'Center'} justifyContent={'center'} flexDirection={{ base: 'column', md: 'row' }} gap={6}>
+                <Box display={'flex'} alignItems={'Center'} justifyContent={'center'} flexDirection={{ base: 'column', lg: 'row' }} gap={6}>
                     {showcaseitems.map((post, index) => {
                         return (
                             <ShowCase key={index} title={post.title} subtitle={post.subtitle} imgUrl={post.imageUrl} text={post.text} />

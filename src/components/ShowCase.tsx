@@ -18,7 +18,8 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                 boxShadow={'2xl'}
                 rounded={'md'}
                 p={6}
-                overflow={'hidden'}>
+                overflow={'hidden'}
+                border={0}>
                 <Box
                     h={'210px'}
                     bg={'gray.100'}
@@ -35,17 +36,17 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                         color={'#1e272e'}
                         textTransform={'uppercase'}
                         fontWeight={800}
-                        fontSize={'sm'}
+                        fontSize={'lg'}
                         letterSpacing={1.1}>
                         {title}
                     </Text>
                     <Heading
-                        color={useColorModeValue('white', 'white')}
+                        color={useColorModeValue('#1e272e', 'white')}
                         fontSize={'2xl'}
                         fontFamily={'body'}>
                         {subtitle}
                     </Heading>
-                    <Text color={'white'}>
+                    <Text color={'#1e272e'}  fontSize={'md'} fontWeight={'500'}>
                         {text}
                     </Text>
                 </Stack>
