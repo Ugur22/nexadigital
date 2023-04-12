@@ -11,8 +11,8 @@ import {
 
 export default function Hero() {
     return (
-        <Box className='hero-block' height={{ base: 'calc(100vh - 100px)', sm: '100vh' }} justifyContent={'center'} background={{ base: 'url(img/blob-hero-mobile.svg)', md: 'url(img/blob-hero.svg)' }} >
-            <Box className="blur" backdropFilter={{base: 'brightness(0.6)', sm: 'brightness(1)'}} >
+        <Box className='hero-block' height={{ base: 'calc(100vh - 60px)', md: '100vh' }} justifyContent={'center'} background={{ base: 'url(img/blob-hero-mobile.svg)', md: 'url(img/blob-hero.svg)' }} >
+            <Box className="blur" backdropFilter={{ base: 'brightness(0.6)', md: 'brightness(1)' }} >
                 <Container>
                     <Stack
                         align={'center'}
@@ -49,11 +49,11 @@ export default function Hero() {
                     </Stack>
                 </Container >
                 <Container maxWidth={'100%'} pt={{ base: 5, md: 0 }}>
-                    <Box display={'flex'} justifyContent={{ base: 'center', md: 'flex-end' }}>
+                    <Box display={'flex'} ml={{ base: 0, md: 'auto' }} mt={{ base: 2, md: 10 }} alignItems={'flex-start'} justifyContent={{ base: 'center', md: 'center' }}>
                         <Image
-                            src='img/hero-image.svg'
+                            src='img/hero-image.svg' ml={{ base: 0, md: '120px' }}
                             width={{ base: '100%', md: 500 }}
-                            height={{ base: 300, md: 500 }}
+                            height={{ base: 300, md: '100%' }}
                             alt='Hero cta '
                         />
                     </Box>
