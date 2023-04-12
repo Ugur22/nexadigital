@@ -9,16 +9,17 @@ import {
     StatLabel,
 } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-import { FaReact, FaVuejs, FaLaravel,FaPhp } from "react-icons/fa";
-import { SiCraftcms,SiGraphql } from "react-icons/si";
+import { FaReact, FaVuejs, FaLaravel, FaPhp, FaSass, FaApple, FaAndroid } from "react-icons/fa";
+import { SiCraftcms, SiGraphql, SiAdobexd } from "react-icons/si";
 
 interface StatsCardProps {
     title: string;
     icon: ReactNode;
     colorIcon: string;
+    bgIcon?: string;
 }
 function StatsCard(props: StatsCardProps) {
-    const { title, icon, colorIcon } = props;
+    const { title, icon, colorIcon, bgIcon = '' } = props;
     return (
         <Stat
             px={{ base: 2, md: 4 }}
@@ -27,15 +28,17 @@ function StatsCard(props: StatsCardProps) {
             border={'2px solid'}
             borderColor={colorIcon}
             rounded={'lg'}>
-            <Flex justifyContent={'space-between'}>
+            <Flex justifyContent={'center'} alignItems={'center'} gap={4}>
                 <Box pl={{ base: 2, md: 4 }}>
-                    <StatLabel fontWeight={'medium'} fontSize={'2xl'} isTruncated>
+                    <StatLabel fontWeight={'medium'} fontSize={'xl'} isTruncated>
                         {title}
                     </StatLabel>
                 </Box>
                 <Box
                     my={'auto'}
                     color={colorIcon}
+                    borderRadius={12}
+                    bgColor={bgIcon}
                     alignContent={'center'}>
                     {icon}
                 </Box>
@@ -50,41 +53,61 @@ export default function Technologies() {
             <chakra.h1
                 textAlign={'center'}
                 fontSize={'4xl'}
-                background={'#f5f6fa'}
                 py={10}
                 fontWeight={'bold'}>
                 Technologies we use
             </chakra.h1>
-            <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
+            <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4, xl: 5 }} spacing={{ base: 5, lg: 8 }}>
                 <StatsCard
-                    title={'React & React Native'}
+                    title={'React'}
                     colorIcon={'#82D7F7'}
-                    icon={<FaReact size={'3em'}/>}
+                    icon={<FaReact size={'3em'} />}
                 />
                 <StatsCard
                     title={'Laravel'}
                     colorIcon={'#EB4432'}
-                    icon={<FaLaravel size={'3em'}/>}
+                    icon={<FaLaravel size={'3em'} />}
                 />
                 <StatsCard
                     title={'Vue.js'}
                     colorIcon={'#65B687'}
-                    icon={<FaVuejs size={'3em'}/>}
+                    icon={<FaVuejs size={'3em'} />}
                 />
                 <StatsCard
                     title={'Craft CMS'}
                     colorIcon={'#D34F38'}
-                    icon={<SiCraftcms size={'3em'}/>}
+                    icon={<SiCraftcms size={'3em'} />}
                 />
                 <StatsCard
                     title={'Graphql'}
                     colorIcon={'#E23199'}
-                    icon={<SiGraphql size={'3em'}/>}
+                    icon={<SiGraphql size={'3em'} />}
                 />
                 <StatsCard
                     title={'PHP'}
                     colorIcon={'#7C86B4'}
-                    icon={<FaPhp size={'3em'}/>}
+                    icon={<FaPhp size={'3em'} />}
+                />
+                <StatsCard
+                    title={'Sass'}
+                    colorIcon={'#C06C97'}
+                    icon={<FaSass size={'3em'} />}
+                />
+                <StatsCard
+                    title={'Adobe XD'}
+                    colorIcon={'#3E0833'}
+                    bgIcon={'#E669E8'}
+                    icon={<SiAdobexd size={'3em'} />}
+                />
+                <StatsCard
+                    title={'Android'}
+                    colorIcon={'#70D78C'}
+                    icon={<FaAndroid size={'3em'} />}
+                />
+                <StatsCard
+                    title={'IOS'}
+                    colorIcon={'#DADADA'}
+                    icon={<FaApple size={'3em'} />}
                 />
             </SimpleGrid>
         </Box>
