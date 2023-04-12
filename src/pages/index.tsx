@@ -4,6 +4,7 @@ import {
 import Hero from "../components/Hero"
 import ServicesBlock from '../components/ServicesBlock';
 import ShowCases from '../components/ShowCases';
+import Technologies from '../components/Technologies';
 
 
 export default function Home(props) {
@@ -12,6 +13,7 @@ export default function Home(props) {
       <Hero />
       <ServicesBlock />
       <ShowCases />
+      <Technologies />
     </div>
   )
 }
