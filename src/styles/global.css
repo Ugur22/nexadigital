@@ -13,7 +13,7 @@ body {
 
 .hero-block {
   background-size: cover !important;
-  background-attachment: scroll !important;
+  background-attachment: fixed !important;
   background-repeat: no-repeat !important;
   background-position: center top !important;
 
@@ -43,4 +43,24 @@ body {
   color: #DF8E49;
   text-decoration-line: underline;
   text-underline-offset: 10px;
+}
+
+.header-nav a {
+  text-decoration-color: transparent;
+  text-underline-offset: 10px;
+}
+
+.header-nav a:hover {
+  color: #DF8E49;
+  text-decoration-line: underline;
+  text-decoration-color: #DF8E49;
+}
+
+.showcase-card {
+background: rgba(255, 255, 255, 0.26);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.4px);
+-webkit-backdrop-filter: blur(6.4px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }

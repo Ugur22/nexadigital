@@ -12,10 +12,7 @@ const MenuItem = ({ children, linkColor, linkHoverColor, isLast, to = "/", ...re
             fontSize={{ base: 'sm', lg: 'md', xl: 'lg' }}
             fontWeight={500}
             color="#FFF"
-            _hover={{
-                textDecoration: 'none',
-                color: linkHoverColor,
-            }}
+            transition="all .3s ease"
             as={NextLink} href={to} p={[1, 2, 4]}>
             <Text display="block" {...rest}>
                 {children}
