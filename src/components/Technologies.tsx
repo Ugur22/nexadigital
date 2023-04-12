@@ -7,25 +7,25 @@ import {
     SimpleGrid,
     Stat,
     StatLabel,
-    StatNumber,
-    useColorModeValue,
 } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-import { FaReact, FaVuejs, FaLaravel } from "react-icons/fa";
+import { FaReact, FaVuejs, FaLaravel,FaPhp } from "react-icons/fa";
+import { SiCraftcms,SiGraphql } from "react-icons/si";
 
 interface StatsCardProps {
     title: string;
     icon: ReactNode;
+    colorIcon: string;
 }
 function StatsCard(props: StatsCardProps) {
-    const { title, icon } = props;
+    const { title, icon, colorIcon } = props;
     return (
         <Stat
             px={{ base: 2, md: 4 }}
             py={'5'}
             shadow={'xl'}
-            border={'1px solid'}
-            borderColor={useColorModeValue('gray.800', 'gray.500')}
+            border={'2px solid'}
+            borderColor={colorIcon}
             rounded={'lg'}>
             <Flex justifyContent={'space-between'}>
                 <Box pl={{ base: 2, md: 4 }}>
@@ -35,7 +35,7 @@ function StatsCard(props: StatsCardProps) {
                 </Box>
                 <Box
                     my={'auto'}
-                    color={useColorModeValue('gray.800', 'gray.200')}
+                    color={colorIcon}
                     alignContent={'center'}>
                     {icon}
                 </Box>
@@ -57,16 +57,34 @@ export default function Technologies() {
             </chakra.h1>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
                 <StatsCard
-                    title={'React/NextJS'}
-                    icon={<FaReact size={'3em'} />}
+                    title={'React & React Native'}
+                    colorIcon={'#82D7F7'}
+                    icon={<FaReact size={'3em'}/>}
                 />
                 <StatsCard
                     title={'Laravel'}
-                    icon={<FaLaravel size={'3em'} />}
+                    colorIcon={'#EB4432'}
+                    icon={<FaLaravel size={'3em'}/>}
                 />
                 <StatsCard
-                    title={'VueJS'}
-                    icon={<FaVuejs size={'3em'} />}
+                    title={'Vue.js'}
+                    colorIcon={'#65B687'}
+                    icon={<FaVuejs size={'3em'}/>}
+                />
+                <StatsCard
+                    title={'Craft CMS'}
+                    colorIcon={'#D34F38'}
+                    icon={<SiCraftcms size={'3em'}/>}
+                />
+                <StatsCard
+                    title={'Graphql'}
+                    colorIcon={'#E23199'}
+                    icon={<SiGraphql size={'3em'}/>}
+                />
+                <StatsCard
+                    title={'PHP'}
+                    colorIcon={'#7C86B4'}
+                    icon={<FaPhp size={'3em'}/>}
                 />
             </SimpleGrid>
         </Box>

@@ -29,7 +29,7 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                     pos={'relative'}>
                     <Image
                         src={imgUrl}
-                        layout={'fill'} alt={''} />
+                        layout={'fill'}  alt={'project'} />
                 </Box>
                 <Stack>
                     <Text
@@ -42,11 +42,10 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                     </Text>
                     <Heading
                         color={useColorModeValue('#1e272e', 'white')}
-                        fontSize={'2xl'}
-                        fontFamily={'body'}>
+                        fontSize={'xl'}>
                         {subtitle}
                     </Heading>
-                    <Text color={'#1e272e'}  fontSize={'md'} fontWeight={'500'}>
+                    <Text color={'#1e272e'}  fontSize={'sm'} fontWeight={'500'}>
                         {text}
                     </Text>
                 </Stack>

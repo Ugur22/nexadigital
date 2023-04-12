@@ -22,7 +22,7 @@ export default function Hero() {
                         <Heading
                             fontWeight={600}
                             color={'#FFF'}
-                            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+                            fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
                             lineHeight={'110%'}>
                             NexaDigital{' '}
                             <Text as={'span'} color={'orange.400'}>
