@@ -41,7 +41,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
                     align={'center'}
                     justify={'center'}
                     rounded={'full'}
-                    bg={useColorModeValue('gray.100', 'gray.700')}>
+                    bg={'#FFF'}>
                     {icon}
                 </Flex>
                 <Box mt={2} color={'1e272e'}>
@@ -61,7 +61,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
 export default function ServicesBlock() {
     return (
         <Box p={4} color="#1e272e" py={10}
-            bg={'#FFF'}>
+            bg={'#f5f6fa'}>
             <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
                 <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
                     Services
@@ -85,7 +85,7 @@ export default function ServicesBlock() {
                     />
                     <Card
                         heading={'Heading'}
-                        icon={<Icon as={FcCollaboration} w={10} h={10} />}
+                        icon={<Icon as={FcCollaboration} w={10} h={100}  /> }
                         description={
                             'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
                         }

@@ -40,7 +40,7 @@ body {
 }
 
 .header-nav a.active {
-  color: #DF8E49;
+  color: #FBAE3C;
   text-decoration-line: underline;
   text-underline-offset: 10px;
 }
@@ -51,9 +51,9 @@ body {
 }
 
 .header-nav a:hover {
-  color: #DF8E49;
+  color: #FBAE3C;
   text-decoration-line: underline;
-  text-decoration-color: #DF8E49;
+  text-decoration-color: #FBAE3C;
 }
 
 .showcase-card {
