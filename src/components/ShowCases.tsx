@@ -32,7 +32,7 @@ export default function ShowCases() {
     return (
         <div>
             <Box p={4} color="#FFF" py={10}
-                backgroundImage={'url(img/blurry-gradient-haikei.svg)'} backgroundSize={'cover'} >
+                backgroundImage={'url(img/wave-haikei.svg)'} backgroundSize={'cover'}  backgroundPosition={'center center'}>
                 <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
                     <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
                         Showcases
