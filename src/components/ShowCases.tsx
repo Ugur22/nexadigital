@@ -39,7 +39,7 @@ export default function ShowCases() {
                     </Heading>
                     <Text fontSize={{ base: 'sm', sm: 'lg' }}>
                         We help businesses achieve success through customized digital solutions. Browse our recent projects in web design, branding, social media,
-                        and content creation to see how we've helped our clients overcome challenges and drive growth.
+                        and content creation to see how we have helped our clients overcome challenges and drive growth.
                     </Text>
                 </Stack>
                 <Box display={'flex'} alignItems={'Center'} justifyContent={'center'} flexDirection={{ base: 'column', md: 'row' }} gap={6}>
