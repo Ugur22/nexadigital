@@ -45,11 +45,12 @@ export default function Navigation() {
     });
 
     return (
-        <Box className='header-nav' position={{ base: clientWindowHeight > 20 ? 'fixed':  'relative', sm: router.pathname == "/" ? clientWindowHeight > 20 ? 'fixed' : 'absolute' : 'relative' }} bg={{ base: 'brand.secondary', md: router.pathname == "/" ? 'transparent' : 'brand.secondary' }} boxShadow={{ base: 'md', md: 'none' }} >
+        <Box className='header-nav' position={{ base: clientWindowHeight !== 0 ? 'fixed':  'relative', sm: router.pathname == "/" ? clientWindowHeight !== 0 ? 'fixed' : 'absolute' : 'relative' }} bg={{ base: 'brand.secondary', md: router.pathname == "/" ? 'transparent' : 'brand.secondary' }} boxShadow={{ base: 'md', md: 'none' }} >
             <Flex
                 color={useColorModeValue('white.600', 'white')}
                 height={'100'}
-                background={clientWindowHeight > 20 ? 'brand.secondary' : 'transparent'}
+                boxShadow={clientWindowHeight !== 0 ? '0 10px 12px 0 #01010157' : ''}
+                background={clientWindowHeight !== 0 ? 'brand.secondary' : 'transparent'}
                 borderRadius={0}
                 transition="all 0.5s ease"
                 p={4}
