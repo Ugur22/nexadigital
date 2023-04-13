@@ -46,12 +46,12 @@ import {
     return (
       <Box
         boxShadow='dark-lg'
-        bg="#1e272e"
+        background={"brand.secondary"}
         position={'fixed'}
         bottom={0}
         width="100%"
         height={'60px'}
-        color={'#FFF'}>
+        color={'white'}>
         <Container
           as={Stack}
           width="100%"

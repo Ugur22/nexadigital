@@ -45,11 +45,11 @@ export default function Navigation() {
     });
 
     return (
-        <Box className='header-nav' position={{ base: clientWindowHeight > 20 ? 'fixed':  'relative', sm: router.pathname == "/" ? clientWindowHeight > 20 ? 'fixed' : 'absolute' : 'relative' }} bg={{ base: '#1e272e', md: router.pathname == "/" ? 'transparent' : '#1e272e' }} boxShadow={{ base: 'md', md: 'none' }} >
+        <Box className='header-nav' position={{ base: clientWindowHeight > 20 ? 'fixed':  'relative', sm: router.pathname == "/" ? clientWindowHeight > 20 ? 'fixed' : 'absolute' : 'relative' }} bg={{ base: 'brand.secondary', md: router.pathname == "/" ? 'transparent' : 'brand.secondary' }} boxShadow={{ base: 'md', md: 'none' }} >
             <Flex
                 color={useColorModeValue('white.600', 'white')}
                 height={'100'}
-                background={clientWindowHeight > 20 ? '#1e272e' : 'transparent'}
+                background={clientWindowHeight > 20 ? 'brand.secondary' : 'transparent'}
                 borderRadius={0}
                 transition="all 0.5s ease"
                 p={4}
@@ -61,7 +61,7 @@ export default function Navigation() {
                     <IconButton
                         onClick={onToggle}
                         icon={
-                            isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} color={"#FFF"} />
+                            isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} color={"white"} />
                         }
                         variant={'ghost'}
                         aria-label={'Toggle Navigation'}

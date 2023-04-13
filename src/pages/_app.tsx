@@ -11,6 +11,13 @@ import '@fontsource/poppins/700.css'
 
 // 2. Call `extendTheme` and pass your custom values
 const theme = extendTheme({
+  colors: {
+    brand: {
+      primary: "#FBAE3C",
+      secondary: "#1e272e",
+      tertiary: "#f5f6fa",
+    },
+  },
   fonts: {
     heading: `'poppins', sans-serif`,
     body: `'poppins', sans-serif`,
@@ -19,11 +26,11 @@ const theme = extendTheme({
     global: {
       // styles for the `body`
       body: {
-        color: '#000',
+        color: 'black',
       },
       // styles for the `a`
       button: {
-        color: '#000',
+        color: 'black',
       },
     },
   },

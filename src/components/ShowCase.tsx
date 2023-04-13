@@ -33,7 +33,7 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                 </Box>
                 <Stack>
                     <Text
-                        color={'#1e272e'}
+                        color={'brand.secondary'}
                         textTransform={'uppercase'}
                         fontWeight={800}
                         fontSize={'lg'}
@@ -41,11 +41,11 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                         {title}
                     </Text>
                     <Heading
-                        color={useColorModeValue('#1e272e', 'white')}
+                        color={useColorModeValue('brand.secondary', 'white')}
                         fontSize={'xl'}>
                         {subtitle}
                     </Heading>
-                    <Text color={'#1e272e'} fontSize={'sm'} fontWeight={'500'}>
+                    <Text color={'brand.secondary'} fontSize={'sm'} fontWeight={'500'}>
                         {text}
                     </Text>
                 </Stack>

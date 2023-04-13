@@ -7,7 +7,6 @@ import {
     Icon,
     Stack,
     Text,
-    useColorModeValue,
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 import {
@@ -41,7 +40,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
                     align={'center'}
                     justify={'center'}
                     rounded={'full'}
-                    bg={'#FFF'}>
+                    bg={'white'}>
                     {icon}
                 </Flex>
                 <Box mt={2} color={'1e272e'}>
@@ -60,8 +59,8 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
 
 export default function ServicesBlock() {
     return (
-        <Box p={4} color="#1e272e" py={10}
-            bg={'#f5f6fa'}>
+        <Box p={4} color="brand.secondary" py={10}
+            bg={'brand.tertiary'}>
             <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
                 <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
                     Services
@@ -76,7 +75,7 @@ export default function ServicesBlock() {
             <Container maxW={'5xl'} mt={12}>
                 <Flex flexWrap="wrap" gridGap={6} justify="center">
                     <Card
-                        heading={'Heading'}
+                        heading={'Custom web application development'}
                         icon={<Icon as={FcAssistant} w={10} h={10} />}
                         description={
                             'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
@@ -84,7 +83,7 @@ export default function ServicesBlock() {
                         href={'#'}
                     />
                     <Card
-                        heading={'Heading'}
+                        heading={'Web application design'}
                         icon={<Icon as={FcCollaboration} w={10} h={100}  /> }
                         description={
                             'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
@@ -92,7 +91,7 @@ export default function ServicesBlock() {
                         href={'#'}
                     />
                     <Card
-                        heading={'Heading'}
+                        heading={'E-commerce development'}
                         icon={<Icon as={FcDonate} w={10} h={10} />}
                         description={
                             'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
@@ -100,7 +99,7 @@ export default function ServicesBlock() {
                         href={'#'}
                     />
                     <Card
-                        heading={'Heading'}
+                        heading={'Website maintenance'}
                         icon={<Icon as={FcManager} w={10} h={10} />}
                         description={
                             'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
@@ -108,7 +107,7 @@ export default function ServicesBlock() {
                         href={'#'}
                     />
                     <Card
-                        heading={'Heading'}
+                        heading={'CMS/CRM/ERP development'}
                         icon={<Icon as={FcAbout} w={10} h={10} />}
                         description={
                             'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
@@ -116,7 +115,7 @@ export default function ServicesBlock() {
                         href={'#'}
                     />
                     <Card
-                        heading={'Heading'}
+                        heading={'Mobile app development'}
                         icon={<Icon as={FcAbout} w={10} h={10} />}
                         description={
                             'Lorem ipsum dolor sit amet catetur, adipisicing elit.'

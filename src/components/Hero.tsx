@@ -21,7 +21,7 @@ export default function Hero() {
                         py={{ base: 10 }} pb={{ sm: 10 }} pt={{ md: 28 }}>
                         <Heading
                             fontWeight={600}
-                            color={'#FFF'}
+                            color={'white'}
                             fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
                             lineHeight={'110%'}>
                             NexaDigital{' '}

@@ -31,7 +31,7 @@ export default function ShowCases() {
             <Box _before={{
                 width: '100%', height: '100%', top: 0, position: 'absolute',
                 left: 0, content: '""', backdropFilter: 'blur(4px) brightness(0.6)', backgroundSize: '100%'
-            }} p={4} color="#FFF" py={10} position={'relative'}
+            }} p={4} color="white" py={10} position={'relative'}
                 backgroundImage={'url(img/showcase-bg.jpg)'} backgroundSize={'cover'} backgroundAttachment={'fixed'} backgroundPosition={'top'}>
                 <Stack spacing={4} position={'relative'} as={Container} maxW={'3xl'} textAlign={'center'}>
                     <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>

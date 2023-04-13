@@ -49,7 +49,7 @@ function StatsCard(props: StatsCardProps) {
 
 export default function Technologies() {
     return (
-        <Box bg={'#f5f6fa'}>
+        <Box bg={'brand.tertiary'}>
             <Box maxW="7xl" mx={'auto'} pb={'calc(100px - 60px)'} px={{ base: 2, sm: 12, md: 17 }}>
                 <chakra.h1
                     textAlign={'center'}

@@ -11,7 +11,7 @@ const MenuItem = ({ children, linkColor, linkHoverColor, isLast, to = "/", ...re
         <Link className={router.pathname == to ? "active" : ""}
             fontSize={{ base: 'sm', lg: 'md', xl: 'lg' }}
             fontWeight={500}
-            color="#FFF"
+            color="white"
             transition="all .3s ease"
             as={NextLink} href={to} p={[1, 2, 4]}>
             <Text display="block" {...rest}>
