@@ -42,7 +42,7 @@ body {
 .header-nav a.active {
   color: #FBAE3C;
   text-decoration-line: underline;
-  text-underline-offset: 10px;
+  text-decoration-color: #FBAE3C;
 }
 
 .header-nav a {
