@@ -133,7 +133,7 @@ import {
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
-                          <FormLabel>Message</FormLabel>
+                          <FormLabel>Write a message</FormLabel>
                           <Textarea
                             borderColor="gray.300"
                             _hover={{
