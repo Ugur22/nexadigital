@@ -23,7 +23,7 @@ import {
 } from '@chakra-ui/icons';
 import Logo from './Logo';
 import MenuItem from './MenuItem';
-
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 
@@ -32,12 +32,26 @@ export default function Navigation() {
 
     const router = useRouter();
 
+    const [clientWindowHeight, setClientWindowHeight] = useState(0);
+
+    const handleScroll = () => {
+        setClientWindowHeight(window.scrollY);
+    };
+
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    });
+
     return (
-        <Box className='header-nav' position={{ base: 'relative', sm: router.pathname == "/" ? 'absolute' : 'relative' }} bg={{ base: '#1e272e', md: router.pathname == "/" ? 'transparent' : '#1e272e' }} boxShadow={{ base: 'md', md: 'none' }} >
+        <Box className='header-nav' position={{ base: 'relative', sm: router.pathname == "/" ? clientWindowHeight > 20 ? 'fixed' : 'absolute' : 'relative' }} bg={{ base: '#1e272e', md: router.pathname == "/" ? 'transparent' : '#1e272e' }} boxShadow={{ base: 'md', md: 'none' }} >
             <Flex
                 color={useColorModeValue('white.600', 'white')}
                 height={'100'}
+                background={clientWindowHeight > 20 ? '#1e272e' : 'transparent'}
                 borderRadius={0}
+                transition="all .3s ease"
                 p={4}
                 align={'center'}>
                 <Flex

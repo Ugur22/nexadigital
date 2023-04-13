@@ -33,7 +33,7 @@ export default function ShowCases() {
                 left: 0, content: '""', backdropFilter: 'blur(4px) brightness(0.6)', backgroundSize: '100%'
             }} p={4} color="#FFF" py={10} position={'relative'}
                 backgroundImage={'url(img/showcase-bg.jpg)'} backgroundSize={'cover'} backgroundAttachment={'fixed'} backgroundPosition={'top'}>
-                <Stack spacing={4} position={'relative'} as={Container} maxW={'3xl'} textAlign={'center'} zIndex={9999}>
+                <Stack spacing={4} position={'relative'} as={Container} maxW={'3xl'} textAlign={'center'}>
                     <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
                         Showcases
                     </Heading>

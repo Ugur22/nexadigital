@@ -1,31 +1,16 @@
 import {
     Container,
-    Flex,
     Box,
     Heading,
-    Text,
-    IconButton,
     Button,
-    VStack,
-    HStack,
-    Wrap,
-    WrapItem,
     FormControl,
     FormLabel,
     Input,
-    InputGroup,
-    InputLeftElement,
     Textarea,
 } from '@chakra-ui/react';
-import {
-    MdPhone,
-    MdEmail,
-    MdLocationOn,
-    MdFacebook,
-    MdOutlineEmail,
-} from 'react-icons/md';
 
 export default function Contact() {
+
     return (
         <Container maxW="full" mt={0} centerContent backgroundImage={'url(img/blob-hero.svg)'} backgroundSize={'cover'}>
             <Box className='contactBlock' m={{ base: 4, sm: 4, md: 16, lg: 10 }}
@@ -47,7 +32,7 @@ export default function Contact() {
                 </FormControl>
                 <FormControl isRequired >
                     <FormLabel fontWeight={'bold'}>Email</FormLabel>
-                        <Input placeholder='First name' borderColor={'#1e272e'} />
+                    <Input placeholder='First name' borderColor={'#1e272e'} />
                 </FormControl>
                 <FormControl isRequired>
                     <FormLabel fontWeight={'bold'}>Message</FormLabel>
