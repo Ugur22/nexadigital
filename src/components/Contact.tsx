@@ -27,7 +27,7 @@ import {
 
 export default function Contact() {
     return (
-        <Container maxW="full" mt={0} centerContent backgroundImage={'url(img/circle-scatter-haikei.svg)'} backgroundSize={'cover'} backgroundAttachment={'fixed'} backgroundPosition={'right'}>
+        <Container maxW="full" mt={0} centerContent backgroundImage={'url(img/blob-hero.svg)'} backgroundSize={'cover'}>
             <Box className='contactBlock' m={{ base: 4, sm: 4, md: 16, lg: 10 }}
                 p={{ base: 4, sm: 5, md: 5, lg: 16 }}
                 w={{ base: '100%', sm: '90%', md: '500px', lg: '600px' }}
