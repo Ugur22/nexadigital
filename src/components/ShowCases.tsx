@@ -1,11 +1,8 @@
-import { Box, Center, Container, Heading, Stack, Text } from '@chakra-ui/react'
+import { Box, Container, Heading, Stack, Text } from '@chakra-ui/react'
 import ShowCase from '../components/ShowCase';
-import React from 'react'
-import { url } from 'inspector';
-
+import React from 'react';
 
 const showcaseitems = [
-
     {
         title: 'Webapp',
         subtitle: 'Boost your conversion rate',
@@ -31,9 +28,12 @@ const showcaseitems = [
 export default function ShowCases() {
     return (
         <div>
-            <Box p={4} color="#FFF" py={10}
-                backgroundImage={'url(img/wave-haikei-4.svg)'} backgroundSize={'cover'}  backgroundPosition={'center'}>
-                <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+            <Box _before={{
+                width: '100%', height: '100%', top: 0, position: 'absolute',
+                left: 0, content: '""', backdropFilter: 'blur(4px) brightness(0.6)', backgroundSize: '100%'
+            }} p={4} color="#FFF" py={10} position={'relative'}
+                backgroundImage={'url(img/showcase-bg.jpg)'} backgroundSize={'cover'} backgroundAttachment={'fixed'} backgroundPosition={'top'}>
+                <Stack spacing={4} position={'relative'} as={Container} maxW={'3xl'} textAlign={'center'} zIndex={9999}>
                     <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
                         Showcases
                     </Heading>

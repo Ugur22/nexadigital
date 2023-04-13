@@ -1,6 +1,7 @@
 import {
   Container,
 } from '@chakra-ui/react';
+import Contact from '../components/Contact';
 import Hero from "../components/Hero"
 import ServicesBlock from '../components/ServicesBlock';
 import ShowCases from '../components/ShowCases';
@@ -14,6 +15,7 @@ export default function Home(props) {
       <ServicesBlock />
       <ShowCases />
       <Technologies />
+      <Contact />
     </div>
   )
 }
