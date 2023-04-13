@@ -45,13 +45,13 @@ export default function Navigation() {
     });
 
     return (
-        <Box className='header-nav' position={{ base: 'relative', sm: router.pathname == "/" ? clientWindowHeight > 20 ? 'fixed' : 'absolute' : 'relative' }} bg={{ base: '#1e272e', md: router.pathname == "/" ? 'transparent' : '#1e272e' }} boxShadow={{ base: 'md', md: 'none' }} >
+        <Box className='header-nav' position={{ base: clientWindowHeight > 20 ? 'fixed':  'relative', sm: router.pathname == "/" ? clientWindowHeight > 20 ? 'fixed' : 'absolute' : 'relative' }} bg={{ base: '#1e272e', md: router.pathname == "/" ? 'transparent' : '#1e272e' }} boxShadow={{ base: 'md', md: 'none' }} >
             <Flex
                 color={useColorModeValue('white.600', 'white')}
                 height={'100'}
                 background={clientWindowHeight > 20 ? '#1e272e' : 'transparent'}
                 borderRadius={0}
-                transition="all .3s ease"
+                transition="all 0.5s ease"
                 p={4}
                 align={'center'}>
                 <Flex

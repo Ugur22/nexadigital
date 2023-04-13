@@ -10,7 +10,7 @@ import {
 
 export default function ShowCase({ imgUrl, title, subtitle, text }) {
     return (
-        <Center py={6}>
+        <Center py={{ base: 3, md: 6 }}>
             <Box
                 maxW={'445px'}
                 w={'full'}
@@ -29,7 +29,7 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                     pos={'relative'}>
                     <Image
                         src={imgUrl}
-                        layout={'fill'}  alt={'project'} />
+                        layout={'fill'} alt={'project'} />
                 </Box>
                 <Stack>
                     <Text
@@ -45,7 +45,7 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                         fontSize={'xl'}>
                         {subtitle}
                     </Heading>
-                    <Text color={'#1e272e'}  fontSize={'sm'} fontWeight={'500'}>
+                    <Text color={'#1e272e'} fontSize={'sm'} fontWeight={'500'}>
                         {text}
                     </Text>
                 </Stack>
