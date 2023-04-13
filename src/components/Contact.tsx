@@ -27,30 +27,29 @@ import {
 
 export default function Contact() {
     return (
-        <Container maxW="full" mt={0} centerContent backgroundImage={'url(img/circle-scatter-haikei.svg)'} backgroundSize={'cover'} backgroundAttachment={'fixed'} backgroundPosition={'top'}>
-            <Box m={{ sm: 4, md: 16, lg: 10 }}
-                p={{ sm: 5, md: 5, lg: 16 }}
-                bg="#f5f6fa"
-                w={'600px'}
+        <Container maxW="full" mt={0} centerContent backgroundImage={'url(img/circle-scatter-haikei.svg)'} backgroundSize={'cover'} backgroundAttachment={'fixed'} backgroundPosition={'right'}>
+            <Box className='contactBlock' m={{ base: 4, sm: 4, md: 16, lg: 10 }}
+                p={{ base: 4, sm: 5, md: 5, lg: 16 }}
+                w={{base: '100%',sm: '90%', md: '500px', lg: '600px'}}
                 color="#1e272e"
                 borderRadius="lg" display={'flex'} flexDirection={'column'} gap={5}>
                 <Heading as='h2' size='xl'>
                     Contact
                 </Heading>
                 <FormControl isRequired>
-                    <FormLabel>First name</FormLabel>
+                    <FormLabel fontWeight={'bold'}>First name</FormLabel>
                     <Input placeholder='First name' borderColor={'#1e272e'}  />
                 </FormControl>
                 <FormControl isRequired>
-                    <FormLabel>Last name</FormLabel>
+                    <FormLabel fontWeight={'bold'}>Last name</FormLabel>
                     <Input placeholder='First name' borderColor={'#1e272e'}  />
                 </FormControl>
                 <FormControl isRequired>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel fontWeight={'bold'}>Email</FormLabel>
                     <Input placeholder='First name' borderColor={'#1e272e'} />
                 </FormControl>
                 <FormControl isRequired>
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel fontWeight={'bold'}>Message</FormLabel>
                     <Textarea placeholder='Here is a sample placeholder' borderColor={'#1e272e'}  />
                 </FormControl>
 

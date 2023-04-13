@@ -56,7 +56,7 @@ body {
   text-decoration-color: #FBAE3C;
 }
 
-.showcase-card {
+.showcase-card,.contactBlock {
   border: 1px solid rgba(255, 255, 255, .25);
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.45);
