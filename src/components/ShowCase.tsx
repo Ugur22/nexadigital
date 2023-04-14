@@ -1,8 +1,8 @@
-import Image from 'next/image';
 import {
     Box,
     Center,
     Heading,
+    Image,
     Text,
     Stack,
     useColorModeValue,
@@ -29,13 +29,16 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                     mb={6}
                     pos={'relative'}>
                     <Image
+                    padding={4}
+                        objectFit='contain'
+                        boxSize='100%'
                         src={imgUrl}
-                        objectFit={'cover'}
-                        layout={'fill'} alt={'project'} />
+                        alt={title} title={title}
+                    />
                 </Box>
                 <Stack
                     flexDirection={'column'}
-                    gap={4 }>
+                    gap={4}>
                     <Text
                         color={'brand.secondary'}
                         fontWeight={800}
