@@ -8,7 +8,6 @@ body {
   line-height: 1.6;
 }
 
-
 .hero-block {
   background-size: cover !important;
   background-attachment: fixed !important;
@@ -18,7 +17,6 @@ body {
 }
 
 .blur {
-  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
