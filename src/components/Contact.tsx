@@ -6,7 +6,8 @@ import {
     FormControl,
     FormLabel,
     Input,
-    Textarea,
+    Text,
+    Textarea
 } from '@chakra-ui/react';
 
 export default function Contact() {
@@ -20,8 +21,11 @@ export default function Contact() {
                 border={0}
                 borderRadius="lg" display={'flex'} flexDirection={'column'} gap={5}>
                 <Heading as='h2' size='xl'>
-                    Contact
+                    Get in Touch with Us
                 </Heading>
+                <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'}>
+                    Let us assist you in achieving your digital goals - fill out the form below and we'll get back to you promptly.
+                </Text>
                 <FormControl isRequired>
                     <FormLabel fontWeight={'bold'}>First name</FormLabel>
                     <Input placeholder='First name' borderColor={'brand.secondary'} />

@@ -4,30 +4,44 @@ import React from 'react';
 
 const showcaseitems = [
     {
-        title: 'Webapp',
+        title: 'Online Reservation System',
         subtitle: 'Boost your conversion rate',
         imageUrl: '/img/laptop.png',
-        text: "the perfect platform to display your portfolio, art, or creative work to the world! With a sleek and user-friendly interface, Showcase makes it easy to upload, organize, and share your projects with potential clients, employers, or fans."
+        text: "In this case, our client was a rental car company. The application enables them to receive online reservations. Their clients can see all available vehicles and make a reservation for selected date and time."
     },
     {
-        title: 'Webapp',
+        title: 'Online order system',
         subtitle: 'Boost your conversion rate',
         imageUrl: '/img/laptop.png',
-        text: "the perfect platform to display your portfolio, art, or creative work to the world! With a sleek and user-friendly interface, Showcase makes it easy to upload, organize, and share your projects with potential clients, employers, or fans."
+        text: "This time is an online order system for a catering company who sells food to a specific market. Only registered members can order food every week."
 
     },
     {
-        title: 'Webapp',
+        title: 'Financial calculator',
         subtitle: 'Boost your conversion rate',
         imageUrl: '/img/laptop.png',
-        text: "the perfect platform to display your portfolio, art, or creative work to the world! With a sleek and user-friendly interface, Showcase makes it easy to upload, organize, and share your projects with potential clients, employers, or fans."
+        text: "As a business owner in financial sector, a client needed to implement online calculator on their website to make online sales. By implementing their formulas in the application, we provided them financial online calculator, like mortgage, credit, or loan calculator."
 
     },
     {
-        title: 'Webapp',
+        title: 'Digitalized form',
         subtitle: 'Boost your conversion rate',
         imageUrl: '/img/laptop.png',
-        text: "the perfect platform to display your portfolio, art, or creative work to the world! With a sleek and user-friendly interface, Showcase makes it easy to upload, organize, and share your projects with potential clients, employers, or fans."
+        text: "In Europe there is a standard damage report form for claiming their car insurance. In this case we created an app which will automatically generate the form for the users."
+
+    },
+    {
+        title: 'Signature document generator',
+        subtitle: 'Boost your conversion rate',
+        imageUrl: '/img/laptop.png',
+        text: "In some cases, people will have to sign many documents at once. Furthermore, those documents will be scanned to get digital copies of those documents. For this case, we have made it a lot simpler with our application. After the documents are automatically generated, people can sign those and save. It will automatically put their signatures on the PDF document."
+
+    },
+    {
+        title: 'Leads generator',
+        subtitle: 'Boost your conversion rate',
+        imageUrl: '/img/laptop.png',
+        text: "As a mortgage intermediary, this company find potential consumers who are looking for mortgage on the internet and sell their personal data to the mortgage advisors. The product, which contain personal data and interest is called as a lead."
 
     },
 ]
@@ -35,7 +49,7 @@ const showcaseitems = [
 export default function ShowCases() {
     return (
         <div>
-            <Box _before={{
+            <Box id='showcases' _before={{
                 width: '100%', height: '100%', top: 0, position: 'absolute',
                 left: 0, content: '""', backdropFilter: 'blur(4px) brightness(0.6)', backgroundSize: '100%'
             }} p={4} color="white" py={10} position={'relative'}

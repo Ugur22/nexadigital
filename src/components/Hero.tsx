@@ -7,12 +7,13 @@ import {
     Button,
     Image,
     Box,
+    Link,
 } from '@chakra-ui/react';
 
 export default function Hero() {
     return (
         <Box className='hero-block' height={{ base: '100%', md: '100vh' }} justifyContent={'center'} background={{ base: 'url(img/blob-hero-mobile.svg)', md: 'url(img/blob-hero.svg)' }} >
-            <Box className="blur" height={{ base: '100%', md: '100vh' }}  backdropFilter={{ base: 'brightness(0.6)', md: 'brightness(1)' }} >
+            <Box className="blur" height={{ base: '100%', md: '100vh' }} backdropFilter={{ base: 'brightness(0.6)', md: 'brightness(1)' }} >
                 <Container mt={{ base: 8, md: 0 }}>
                     <Stack
                         align={'center'}
@@ -42,9 +43,17 @@ export default function Hero() {
                                 _hover={{ bg: 'orange.500' }}>
                                 Contact Us
                             </Button>
-                            <Button rounded={'full'} transition="all .4s ease" px={6}>
+                            <Link href='#showcases' rounded={'full'}
+                                px={6}
+                                color={'brand.secondary'}
+                                fontWeight={'bold'}
+                                display={'flex'}
+                                alignItems={'center'}
+                                bg={'brand.tertiary'}
+                                transition="all .4s ease"
+                                _hover={{ textDecorationLine: 'none' }}>
                                 Our Projects
-                            </Button>
+                            </Link>
                         </Stack>
                     </Stack>
                 </Container >

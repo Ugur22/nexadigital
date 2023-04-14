@@ -4,6 +4,10 @@ html {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.6;
 }

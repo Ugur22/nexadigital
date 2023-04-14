@@ -6,13 +6,14 @@ import {
     Text,
     Stack,
     useColorModeValue,
+    Link,
 } from '@chakra-ui/react';
 
 export default function ShowCase({ imgUrl, title, subtitle, text }) {
     return (
         <Center py={{ base: 3, lg: 6 }}>
             <Box
-                maxW={{ md: '600px', lg: '445px' }}
+                height={{ md: '600px', lg: '480px' }}
                 w={'full'}
                 className="showcase-card"
                 boxShadow={'2xl'}
@@ -32,23 +33,37 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                         objectFit={'cover'}
                         layout={'fill'} alt={'project'} />
                 </Box>
-                <Stack>
+                <Stack
+                    flexDirection={'column'}
+                    gap={4 }>
                     <Text
                         color={'brand.secondary'}
-                        textTransform={'uppercase'}
                         fontWeight={800}
-                        fontSize={'lg'}
+                        fontSize={'md'}
                         letterSpacing={1.1}>
                         {title}
                     </Text>
-                    <Heading
+                    {/* <Heading
                         color={useColorModeValue('brand.secondary', 'white')}
                         fontSize={'xl'}>
                         {subtitle}
-                    </Heading>
+                    </Heading> */}
                     <Text color={'brand.secondary'} fontSize={'sm'} fontWeight={'500'}>
-                        {text}
+                        {text.substring(0, 150).concat('...')}
                     </Text>
+                    <Link rounded={'full'}
+                        px={6}
+                        py={2}
+                        alignSelf={'right'}
+                        color={'brand.secondary'}
+                        fontWeight={'bold'}
+                        display={'flex'}
+                        w={'fit-content'}
+                        bg={'brand.tertiary'}
+                        transition="all .4s ease"
+                        _hover={{ textDecorationLine: 'none' }}>
+                        Read case
+                    </Link>
                 </Stack>
             </Box>
         </Center>
