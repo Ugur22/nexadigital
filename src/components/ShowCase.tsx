@@ -11,7 +11,7 @@ import {
 
 export default function ShowCase({ imgUrl, title, subtitle, text }) {
     return (
-        <Center py={{ base: 3, lg: 6 }}>
+        <Center py={{ base: 3, lg: 0 }}>
             <Box
                 height={{ md: '600px', lg: '480px' }}
                 w={'full'}
