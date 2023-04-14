@@ -61,7 +61,7 @@ export default function ServicesBlock() {
     return (
         <Box p={4} color="brand.secondary" py={10}
             bg={'brand.tertiary'}>
-            <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+            <Stack spacing={4} as={Container} px={{ sm: 0, md: 8 }} maxW={'4xl'} textAlign={'left'}>
                 <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
                     Services
                 </Heading>
@@ -84,7 +84,7 @@ export default function ServicesBlock() {
                     />
                     <Card
                         heading={'Web application design'}
-                        icon={<Icon as={FcCollaboration} w={10} h={100}  /> }
+                        icon={<Icon as={FcCollaboration} w={10} h={100} />}
                         description={
                             'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
                         }

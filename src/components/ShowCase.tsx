@@ -10,9 +10,9 @@ import {
 
 export default function ShowCase({ imgUrl, title, subtitle, text }) {
     return (
-        <Center py={{ base: 3, md: 6 }}>
+        <Center py={{ base: 3, lg: 6 }}>
             <Box
-                maxW={'445px'}
+                maxW={{ md: '600px', lg: '445px' }}
                 w={'full'}
                 className="showcase-card"
                 boxShadow={'2xl'}
@@ -29,6 +29,7 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                     pos={'relative'}>
                     <Image
                         src={imgUrl}
+                        objectFit={'cover'}
                         layout={'fill'} alt={'project'} />
                 </Box>
                 <Stack>
