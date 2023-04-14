@@ -24,7 +24,7 @@ export default function Contact() {
                     Get in Touch with Us
                 </Heading>
                 <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'}>
-                    Let us assist you in achieving your digital goals - fill out the form below and we'll get back to you promptly.
+                    Let us assist you in achieving your digital goals - fill out the form below and we will get back to you promptly.
                 </Text>
                 <FormControl isRequired>
                     <FormLabel fontWeight={'bold'}>First name</FormLabel>

@@ -63,7 +63,7 @@ export default function Technologies() {
                         Our Toolbox for Web Development
                     </Heading>
                     <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'3xl'}>
-                    At NexaDigital, we craft exceptional digital experiences using powerful tools like HTML, CSS, JavaScript, PHP, React, Angular, and Vue. With Agile and Scrum methodologies, we ensure efficient and results-driven development. Whether it's a simple website or complex web application, we bring your vision to life.                    </Text>
+                    At NexaDigital, we craft exceptional digital experiences using powerful tools like HTML, CSS, JavaScript, PHP, React, Angular, and Vue. With Agile and Scrum methodologies, we ensure efficient and results-driven development. Whether it is a simple website or complex web application, we bring your vision to life.</Text>
                 </Stack>
                 <SimpleGrid columns={{ base: 1, sm: 2, md: 3, xl: 4 }} spacing={{ base: 5, lg: 8 }}>
                     <StatsCard
