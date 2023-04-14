@@ -48,7 +48,7 @@ export default function Navigation() {
         <Box className='header-nav' position={{ base: clientWindowHeight !== 0 ? 'fixed':  'relative', sm: router.pathname == "/" ? clientWindowHeight !== 0 ? 'fixed' : 'absolute' : 'relative' }} bg={{ base: 'brand.secondary', md: router.pathname == "/" ? 'transparent' : 'brand.secondary' }} boxShadow={{ base: 'md', md: 'none' }} >
             <Flex
                 color={useColorModeValue('white.600', 'white')}
-                height={'100'}
+                height={{ base: '70px', md: '100px'}}
                 boxShadow={clientWindowHeight !== 0 ? '0 10px 12px 0 #01010157' : ''}
                 background={clientWindowHeight !== 0 ? 'brand.secondary' : 'transparent'}
                 borderRadius={0}
@@ -62,7 +62,7 @@ export default function Navigation() {
                     <IconButton
                         onClick={onToggle}
                         icon={
-                            isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} color={"white"} />
+                            isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={8} h={8} color={"white"} />
                         }
                         variant={'ghost'}
                         aria-label={'Toggle Navigation'}

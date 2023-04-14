@@ -11,10 +11,10 @@ import {
 
 export default function Hero() {
     return (
-        <Box className='hero-block' height={{ base: 'calc(100vh - 60px)', md: '100vh' }} justifyContent={'center'} background={{ base: 'url(img/blob-hero-mobile.svg)', md: 'url(img/blob-hero.svg)' }} >
+        <Box className='hero-block'  height={{ base: 'calc(100vh - 60px)', md: '100vh' }} justifyContent={'center'} background={{ base: 'url(img/blob-hero-mobile.svg)', md: 'url(img/blob-hero.svg)' }} >
             <Box className="blur" backdropFilter={{ base: 'brightness(0.6)', md: 'brightness(1)' }} >
                 <Container>
-                    <Stack
+                    <Stack  
                         align={'center'}
                         spacing={{ base: 8, md: 10 }}
                         borderRadius={0}

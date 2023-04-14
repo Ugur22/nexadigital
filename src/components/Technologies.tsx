@@ -58,7 +58,7 @@ export default function Technologies() {
                     fontWeight={'bold'}>
                     Technologies we use
                 </chakra.h1>
-                <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4, xl: 5 }} spacing={{ base: 5, lg: 8 }}>
+                <SimpleGrid columns={{ base: 1, sm: 2, md: 3, xl: 4 }} spacing={{ base: 5, lg: 8 }}>
                     <StatsCard
                         title={'React'}
                         colorIcon={'#82D7F7'}
