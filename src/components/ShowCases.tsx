@@ -40,7 +40,7 @@ export default function ShowCases() {
                 left: 0, content: '""', backdropFilter: 'blur(4px) brightness(0.6)', backgroundSize: '100%'
             }} p={4} color="white" py={10} position={'relative'}
                 backgroundImage={'url(img/showcase-bg.jpg)'} backgroundSize={'cover'} backgroundAttachment={'fixed'} backgroundPosition={'top'}>
-                <Stack as={Container} spacing={4} position={'relative'} maxW={'6xl'} textAlign={'left'}>
+                <Stack as={Container} spacing={4} px={0} position={'relative'} maxW={'6xl'} textAlign={'left'}>
                     <Heading fontSize={{ base: 'xl', sm: 'xl' }} fontWeight={'bold'} >
                         Showcases
                     </Heading>
@@ -48,7 +48,7 @@ export default function ShowCases() {
                         See Our Digital Solutions in Action.
                     </Heading>
                     <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'}>
-                        NexaDigital specializes in creating custom digital solutions for businesses. Our portfolio features recent projects in web design, branding, social media management, and content creation. Take a look at our work to see how we've helped our clients succeed and grow.
+                        NexaDigital specializes in creating custom digital solutions for businesses. Our portfolio features recent projects in web design, branding, social media management, and content creation. Take a look at our work to see how we have helped our clients succeed and grow.
                     </Text>
                 </Stack>
 
