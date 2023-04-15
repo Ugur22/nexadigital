@@ -52,7 +52,7 @@ export default function ShowCases() {
             <Box id='showcases' _before={{
                 width: '100%', height: '100%', top: 0, position: 'absolute',
                 left: 0, content: '""', backdropFilter: 'blur(4px) brightness(0.6)', backgroundSize: '100%'
-            }} p={4} color="white" py={24} position={'relative'}
+            }} p={4} color="white" py={{ base: 10, md: 24 }} position={'relative'}
                 backgroundImage={'url(img/showcase-bg.jpg)'} backgroundSize={'cover'} backgroundAttachment={'fixed'} backgroundPosition={'top'}>
                 <Stack as={Container} spacing={4} px={0} position={'relative'} maxW={'7xl'} textAlign={'left'}>
                     <Heading fontSize={{ base: 'xl', sm: 'xl' }} fontWeight={'bold'} >

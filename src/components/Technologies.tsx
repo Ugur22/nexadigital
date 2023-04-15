@@ -54,7 +54,7 @@ function StatsCard(props: StatsCardProps) {
 export default function Technologies() {
     return (
         <Box bg={'brand.tertiary'}>
-            <Box maxW="7xl" mx={'auto'} py={10} px={{ base: 2, sm: 12, md: 17 }}>
+            <Box maxW="7xl" mx={'auto'} py={{ base: 10, md: 24 }}  px={{ base: 2, sm: 12, md: 17 }}>
                 <Stack as={Container} spacing={4} pb={10} px={0} position={'relative'} maxW={'7xl'} textAlign={'left'}>
                     <Heading fontSize={{ base: 'lg', sm: 'lg' }} fontWeight={'bold'} >
                         Enhancing Your Digital Footprint

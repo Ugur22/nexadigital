@@ -52,7 +52,7 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                         {subtitle}
                     </Heading> */}
                     <Text color={'brand.secondary'} fontSize={'sm'} fontWeight={'500'}>
-                        {text.substring(0, 150).concat('...')}
+                        {text.substring(0, 140).concat('...')}
                     </Text>
                     <Link rounded={'full'}
                         px={6}

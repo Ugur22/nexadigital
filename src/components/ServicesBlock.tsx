@@ -53,7 +53,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
 
 export default function ServicesBlock() {
     return (
-        <Box p={4} color="brand.secondary" py={10}
+        <Box p={4} color="brand.secondary" py={{ base: 10, md: 24 }} 
             bg={'brand.tertiary'}>
             <Stack spacing={4} as={Container} px={{ sm: 0, md: 8 }} maxW={'7xl'} textAlign={'left'}>
                 <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
