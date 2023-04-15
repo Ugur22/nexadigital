@@ -60,7 +60,7 @@ export default function ServicesBlock() {
                     Services
                 </Heading>
                 <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'} >
-                    We specialize in web development services to help you create and enhance your online presence. Our services include website design and development, e-commerce solutions, and search engine optimization to improve your website's visibility.
+                    We specialize in web development services to help you create and enhance your online presence. Our services include website design and development, e-commerce solutions, and search engine optimization to improve your website&#39;s visibility.
                 </Text>
             </Stack>
 
