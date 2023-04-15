@@ -1,5 +1,5 @@
-import FooterSection from './FooterSection';
-import Navigation from "./Navigation";
+import Footer from './organisms/Footer';
+import Navigation from "./organisms/Navigation";
 
 export default function Layout({ children }) {
     return (
@@ -8,7 +8,7 @@ export default function Layout({ children }) {
             <main>
                 {children}
             </main>
-            <FooterSection />
+            <Footer />
         </>
     )
 }

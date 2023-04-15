@@ -1,5 +1,5 @@
 import { Box, Container, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react'
-import ShowCase from '../components/ShowCase';
+import ShowCase from './ShowCase';
 import React from 'react';
 
 const showcaseitems = [

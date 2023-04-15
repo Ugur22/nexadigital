@@ -1,28 +1,10 @@
-import {
-    Box,
-    Flex,
-    Text,
-    IconButton,
-    Button,
-    Stack,
-    Collapse,
-    Icon,
-    Link,
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
-    useColorModeValue,
-    useBreakpointValue,
-    useDisclosure,
+import {Box,Flex,Text,IconButton,Button,Stack,Collapse,Icon,Link, Popover,
+    PopoverTrigger,PopoverContent,useColorModeValue, useDisclosure,
 } from '@chakra-ui/react';
-import {
-    HamburgerIcon,
-    CloseIcon,
-    ChevronDownIcon,
-    ChevronRightIcon,
+import {HamburgerIcon,CloseIcon,ChevronDownIcon,ChevronRightIcon,
 } from '@chakra-ui/icons';
-import Logo from './Logo';
-import MenuItem from './MenuItem';
+import Logo from '../atoms/Logo';
+import MenuItem from '../molecules/MenuItem';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
@@ -37,7 +19,6 @@ export default function Navigation() {
     const handleScroll = () => {
         setClientWindowHeight(window.scrollY);
     };
-
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
