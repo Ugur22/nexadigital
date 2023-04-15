@@ -54,7 +54,7 @@ export default function ShowCases() {
                 left: 0, content: '""', backdropFilter: 'blur(4px) brightness(0.6)', backgroundSize: '100%'
             }} p={4} color="white" py={24} position={'relative'}
                 backgroundImage={'url(img/showcase-bg.jpg)'} backgroundSize={'cover'} backgroundAttachment={'fixed'} backgroundPosition={'top'}>
-                <Stack as={Container} spacing={4} px={0} position={'relative'} maxW={'6xl'} textAlign={'left'}>
+                <Stack as={Container} spacing={4} px={0} position={'relative'} maxW={'7xl'} textAlign={'left'}>
                     <Heading fontSize={{ base: 'xl', sm: 'xl' }} fontWeight={'bold'} >
                         Showcases
                     </Heading>
@@ -66,7 +66,7 @@ export default function ShowCases() {
                     </Text>
                 </Stack>
 
-                <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} maxW={'6xl'} mx={'auto'} my={6} gap={{ base: 3, lg: 6 }}>
+                <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} maxW={'7xl'} mx={'auto'} my={6} gap={{ base: 3, lg: 6 }}>
                     {showcaseitems.map((post, index) => {
                         return (
                             <ShowCase key={index} title={post.title} subtitle={post.subtitle} imgUrl={post.imageUrl} text={post.text} />
