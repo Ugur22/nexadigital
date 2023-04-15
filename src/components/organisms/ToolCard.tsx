@@ -10,7 +10,7 @@ interface ToolCardProps {
 export default function Card(props: ToolCardProps) {
     const { title, icon, colorIcon, bgIcon = '' } = props;
     return (
-        <Stat
+        <Stat cursor={'pointer'}
             px={{ base: 2, md: 4 }}
             py={'5'}
             shadow={'xl'}

@@ -13,7 +13,7 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
     return (
         <Center py={{ base: 3, lg: 0 }}>
             <Box
-                height={{ md: '600px', lg: '480px' }}
+                height={{ md: '600px', lg: '440px' }}
                 w={'full'}
                 className="showcase-card"
                 boxShadow={'2xl'}
@@ -46,11 +46,6 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                         letterSpacing={1.1}>
                         {title}
                     </Text>
-                    {/* <Heading
-                        color={useColorModeValue('brand.secondary', 'white')}
-                        fontSize={'xl'}>
-                        {subtitle}
-                    </Heading> */}
                     <Text color={'brand.secondary'} fontSize={'sm'} fontWeight={'500'}>
                         {text.substring(0, 140).concat('...')}
                     </Text>

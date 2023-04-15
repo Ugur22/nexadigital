@@ -5,6 +5,7 @@ import {
 import { FaReact, FaVuejs, FaLaravel, FaPhp, FaSass, FaApple, FaAndroid } from "react-icons/fa";
 import { SiCraftcms, SiGraphql, SiAdobexd } from "react-icons/si";
 import ToolCard from '../organisms/ToolCard';
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Technologies() {
 
@@ -77,17 +78,25 @@ export default function Technologies() {
                         Whether you need a basic website or a complex web application, we have the expertise to bring your vision to life.
                     </Text>
                 </Stack>
-                <SimpleGrid columns={{ base: 1, sm: 2, md: 3, xl: 4 }} spacing={{ base: 5, lg: 8 }}>
 
+
+                <SimpleGrid columns={{ base: 1, sm: 2, md: 3, xl: 4 }} spacing={{ base: 5, lg: 8 }}>
                     {ToolsList.map((tool, index) => {
                         return (
-                            <ToolCard key={index}
-                                title={tool.title}
-                                colorIcon={tool.colorIcon}
-                                bgIcon={tool.bgIcon}
-                                icon={<tool.icon
-                                size={'3em'} />}
-                            />
+                            <motion.div key={index}
+                                whileHover={{ y: -10 }}
+                                whileTap={{
+                                    y: -10
+                                }}
+                            >
+                                <ToolCard key={index}
+                                    title={tool.title}
+                                    colorIcon={tool.colorIcon}
+                                    bgIcon={tool.bgIcon}
+                                    icon={<tool.icon
+                                        size={'3em'} />}
+                                />
+                            </motion.div>
                         )
                     })}
                 </SimpleGrid>

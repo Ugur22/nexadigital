@@ -18,7 +18,7 @@ export default function Card({ heading, description, icon, href }: CardProps) {
             overflow="hidden"
             borderColor={'brand.secondary'}
             p={5}>
-            <Stack align={'start'} spacing={2}>
+            <Stack align={'start'} gap={3} spacing={2}>
                 <Flex
                     w={16}
                     h={16}
@@ -30,11 +30,21 @@ export default function Card({ heading, description, icon, href }: CardProps) {
                 </Flex>
                 <Box mt={2} color={'1e272e'}>
                     <Heading size="md" >{heading}</Heading >
-                    <Text mt={1} fontSize={'sm'} >
-                        {description}
+                    <Text mt={1} fontSize={'sm'} wordBreak={'break-all'}>
+                        {description.substring(0, 140).concat('...')}
                     </Text>
                 </Box>
-                <Link href={href} variant={'link'} color={'brand.secondary'} size={'sm'}>
+
+                <Link rounded={'full'}
+                    href={href} variant={'link'} color={'brand.tertiary'}
+                    mt={4}
+                    py={2}
+                    px={5}
+                    fontWeight={'bold'}
+                    display={'flex'}
+                    bg={'brand.secondary'}
+                    transition="all .4s ease"
+                    _hover={{ textDecorationLine: 'none' }}>
                     Learn more
                 </Link>
             </Stack>
