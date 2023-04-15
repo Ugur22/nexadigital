@@ -79,7 +79,6 @@ export default function Technologies() {
                     </Text>
                 </Stack>
 
-
                 <SimpleGrid columns={{ base: 1, sm: 2, md: 3, xl: 4 }} spacing={{ base: 5, lg: 8 }}>
                     {ToolsList.map((tool, index) => {
                         return (

@@ -1,11 +1,9 @@
 import {
     Box,
     Center,
-    Heading,
     Image,
     Text,
     Stack,
-    useColorModeValue,
     Link,
 } from '@chakra-ui/react';
 
