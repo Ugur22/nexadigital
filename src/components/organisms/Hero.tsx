@@ -34,17 +34,24 @@ export default function Hero() {
                             NexaDigital - Your trusted web agency for web design, web development, SEO, digital marketing and more. Our tailored approach ensures we deliver the results you need to succeed online. Let us simplify your digital journey.
                         </Text>
                         <Stack spacing={6} direction={'row'}>
-                            <Button
-                                rounded={'full'}
+                            <Link href='#contact' rounded={'full'}
                                 px={6}
+                                py={3}
+                                w={'fit-content'}
                                 colorScheme={'orange'}
                                 bg={'orange.400'}
+                                color={'white'}
+                                fontWeight={'bold'}
+                                display={'flex'}
+                                alignItems={'center'}
                                 transition="all .4s ease"
-                                _hover={{ bg: 'orange.500' }}>
+                                _hover={{ textDecorationLine: 'none' }}>
                                 Contact Us
-                            </Button>
+                            </Link>
                             <Link href='#showcases' rounded={'full'}
                                 px={6}
+                                py={3}
+                                w={'fit-content'}
                                 color={'brand.secondary'}
                                 fontWeight={'bold'}
                                 display={'flex'}
