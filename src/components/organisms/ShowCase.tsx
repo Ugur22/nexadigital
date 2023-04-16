@@ -6,6 +6,7 @@ import {
     Stack,
     Link,
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 
 export default function ShowCase({ imgUrl, title, subtitle, text }) {
     return (
@@ -27,7 +28,7 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                     mb={6}
                     pos={'relative'}>
                     <Image
-                    padding={4}
+                        padding={4}
                         objectFit='contain'
                         boxSize='100%'
                         src={imgUrl}
@@ -47,19 +48,26 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                     <Text color={'brand.secondary'} fontSize={'sm'} fontWeight={'500'}>
                         {text.substring(0, 140).concat('...')}
                     </Text>
-                    <Link rounded={'full'}
-                        px={6}
-                        py={2}
-                        w={'fit-content'}
-                        alignSelf={'right'}
-                        color={'brand.secondary'}
-                        fontWeight={'bold'}
-                        display={'flex'}
-                        bg={'brand.tertiary'}
-                        transition="all .4s ease"
-                        _hover={{ textDecorationLine: 'none' }}>
-                        Read case
-                    </Link>
+                    <motion.div
+                        whileHover={{  x: 10 }}
+                        whileTap={{
+                            x: 10
+                        }}
+                    >
+                        <Link rounded={'full'}
+                            px={6}
+                            py={2}
+                            w={'fit-content'}
+                            alignSelf={'right'}
+                            color={'brand.secondary'}
+                            fontWeight={'bold'}
+                            display={'flex'}
+                            bg={'brand.tertiary'}
+                            transition="all .4s ease"
+                            _hover={{ textDecorationLine: 'none' }}>
+                            Read case
+                        </Link>
+                    </motion.div>
                 </Stack>
             </Box>
         </Center>

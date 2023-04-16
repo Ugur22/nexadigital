@@ -1,4 +1,5 @@
 import { Box, Link, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React, { ReactElement } from "react";
 
 interface CardProps {
@@ -34,19 +35,25 @@ export default function Card({ heading, description, icon, href }: CardProps) {
                         {description.substring(0, 140).concat('...')}
                     </Text>
                 </Box>
-
-                <Link rounded={'full'}
-                    href={href} variant={'link'} color={'brand.tertiary'}
-                    mt={4}
-                    py={2}
-                    px={5}
-                    fontWeight={'bold'}
-                    display={'flex'}
-                    bg={'brand.secondary'}
-                    transition="all .4s ease"
-                    _hover={{ textDecorationLine: 'none' }}>
-                    Learn more
-                </Link>
+                <motion.div
+                    whileHover={{ x: 10 }}
+                    whileTap={{
+                        x: 10
+                    }}
+                >
+                    <Link rounded={'full'}
+                        href={href} variant={'link'} color={'brand.tertiary'}
+                        mt={4}
+                        py={2}
+                        px={5}
+                        fontWeight={'bold'}
+                        display={'flex'}
+                        bg={'brand.secondary'}
+                        transition="all .4s ease"
+                        _hover={{ textDecorationLine: 'none' }}>
+                        Learn more
+                    </Link>
+                </motion.div>
             </Stack>
         </Box>
     );

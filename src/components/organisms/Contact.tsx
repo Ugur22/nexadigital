@@ -10,6 +10,7 @@ import {
     Textarea
 } from '@chakra-ui/react';
 
+
 export default function Contact() {
 
     return (
@@ -28,15 +29,15 @@ export default function Contact() {
                 </Text>
                 <FormControl isRequired>
                     <FormLabel fontWeight={'bold'}>First name</FormLabel>
-                    <Input placeholder='First name' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }}/>
+                    <Input placeholder='First name' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
                 </FormControl>
                 <FormControl isRequired>
                     <FormLabel fontWeight={'bold'}>Last name</FormLabel>
-                    <Input placeholder='First name' borderColor={'brand.secondary'}_hover={{ borderColor: 'none' }} />
+                    <Input placeholder='First name' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
                 </FormControl>
                 <FormControl isRequired >
                     <FormLabel fontWeight={'bold'}>Email</FormLabel>
-                    <Input placeholder='First name' borderColor={'brand.secondary'}   _hover={{ borderColor: 'none' }} />
+                    <Input placeholder='First name' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
                 </FormControl>
                 <FormControl isRequired>
                     <FormLabel fontWeight={'bold'}>Message</FormLabel>

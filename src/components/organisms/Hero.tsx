@@ -11,8 +11,8 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
     return (
-        <Box className='hero-block' height={{ base: '100%', md: '100vh' }} justifyContent={'center'} background={{ base: 'url(img/blob-hero-mobile.svg)', md: 'url(img/blob-hero.svg)' }} >
-            <Box className="blur" height={{ base: '100%', md: '100vh' }} backdropFilter={{ base: 'brightness(0.6)', md: 'brightness(1)' }} >
+        <Box className='hero-block' height={{ base: '100vh', md: '100vh' }} justifyContent={'center'} background={{ base: 'url(img/blob-hero-mobile.svg)', md: 'url(img/blob-hero.svg)' }} >
+            <Box className="blur" height={{ base: '100vh', md: '100vh' }} backdropFilter={{ base: 'brightness(0.6)', md: 'brightness(1)' }} >
                 <Container mt={{ base: 8, md: 0 }}>
                     <Stack
                         align={'center'}
@@ -75,22 +75,12 @@ export default function Hero() {
                 </Container >
                 <Container maxWidth={'100%'} pt={{ base: 5, md: 0 }}>
                     <Box display={'flex'} ml={{ base: 0, md: 'auto' }} mt={{ base: 2, md: 10 }} alignItems={'flex-start'} justifyContent={{ base: 'center', md: 'center' }}>
-                        <motion.div
-                            drag
-                            dragConstraints={{
-                                top: -50,
-                                left: -50,
-                                right: 50,
-                                bottom: 50,
-                            }}
-                        >
-                            <Image
-                                src='img/hero-image.svg' ml={{ base: 0, md: '120px' }}
-                                width={{ base: '100%', md: 500 }}
-                                height={{ base: 300, md: '100%' }}
-                                alt='Hero cta '
-                            />
-                        </motion.div>
+                        <Image display={{ base: 'none', md: 'block' }}
+                            src='img/hero-image.svg' ml={{ base: 0, md: '120px' }}
+                            width={{ base: '100%', md: 500 }}
+                            height={{ base: 300, md: '100%' }}
+                            alt='Hero cta '
+                        />
                     </Box>
                 </Container>
             </Box>
