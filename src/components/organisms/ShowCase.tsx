@@ -21,7 +21,7 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                 border={0}>
                 <Box
                     h={'210px'}
-                    bg={'gray.100'}
+                    bg={'white'}
                     mt={-6}
                     mx={-6}
                     mb={6}
@@ -50,11 +50,11 @@ export default function ShowCase({ imgUrl, title, subtitle, text }) {
                     <Link rounded={'full'}
                         px={6}
                         py={2}
+                        w={'fit-content'}
                         alignSelf={'right'}
                         color={'brand.secondary'}
                         fontWeight={'bold'}
                         display={'flex'}
-                        w={'fit-content'}
                         bg={'brand.tertiary'}
                         transition="all .4s ease"
                         _hover={{ textDecorationLine: 'none' }}>

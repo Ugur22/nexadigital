@@ -5,7 +5,7 @@ import {
 import { FaReact, FaVuejs, FaLaravel, FaPhp, FaSass, FaApple, FaAndroid } from "react-icons/fa";
 import { SiCraftcms, SiGraphql, SiAdobexd } from "react-icons/si";
 import ToolCard from '../organisms/ToolCard';
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Technologies() {
 

@@ -1,7 +1,9 @@
-import {Box,Flex,Text,IconButton,Button,Stack,Collapse,Icon,Link, Popover,
-    PopoverTrigger,PopoverContent,useColorModeValue, useDisclosure,
+import {
+    Box, Flex, Text, IconButton, Button, Stack, Collapse, Icon, Link, Popover,
+    PopoverTrigger, PopoverContent, useColorModeValue, useDisclosure,
 } from '@chakra-ui/react';
-import {HamburgerIcon,CloseIcon,ChevronDownIcon,ChevronRightIcon,
+import {
+    HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon,
 } from '@chakra-ui/icons';
 import Logo from '../atoms/Logo';
 import MenuItem from '../molecules/MenuItem';
@@ -26,10 +28,10 @@ export default function Navigation() {
     });
 
     return (
-        <Box className='header-nav' position={{ base: clientWindowHeight !== 0 ? 'fixed':  'relative', sm: router.pathname == "/" ? clientWindowHeight !== 0 ? 'fixed' : 'absolute' : 'relative' }} bg={{ base: 'brand.secondary', md: router.pathname == "/" ? 'transparent' : 'brand.secondary' }} boxShadow={{ base: 'md', md: 'none' }} >
+        <Box className='header-nav' position={{ base: clientWindowHeight !== 0 ? 'fixed' : 'relative', sm: router.pathname == "/" ? clientWindowHeight !== 0 ? 'fixed' : 'absolute' : 'relative' }} bg={{ base: 'brand.secondary', md: router.pathname == "/" ? 'transparent' : 'brand.secondary' }} boxShadow={{ base: 'md', md: 'none' }} >
             <Flex
                 color={useColorModeValue('white.600', 'white')}
-                height={{ base: '70px', md: '100px'}}
+                height={{ base: '70px', md: '100px' }}
                 boxShadow={clientWindowHeight !== 0 ? '0 10px 12px 0 #01010157' : ''}
                 background={clientWindowHeight !== 0 ? 'brand.secondary' : 'transparent'}
                 borderRadius={0}

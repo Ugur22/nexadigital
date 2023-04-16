@@ -1,6 +1,7 @@
 import {
     Box, Container, Flex, Heading, Icon, Stack, Text,
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import { FaStore, FaDesktop, FaPencilRuler, FaBug, FaRegListAlt, FaMobileAlt } from "react-icons/fa";
 import Card from './Card';
 
