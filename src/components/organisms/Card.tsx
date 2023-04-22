@@ -12,14 +12,14 @@ interface CardProps {
 export default function Card({ heading, description, icon, href }: CardProps) {
     return (
         <Box className='card-service'
-            maxW={{ base: 'full', md: '400px' }}
+            maxW={{ base: 'full', md: '460px' }}
             w={'full'}
             borderWidth="2px"
             borderRadius="lg"
             overflow="hidden"
             borderColor={'brand.secondary'}
             p={5}>
-            <Stack align={'start'} gap={3} spacing={2}>
+            <Stack align={'start'} spacing={2}>
                 <Flex
                     w={16}
                     h={16}

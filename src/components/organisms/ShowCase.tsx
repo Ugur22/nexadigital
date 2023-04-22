@@ -8,11 +8,11 @@ import {
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
-export default function ShowCase({ imgUrl, title, subtitle, text }) {
+export default function ShowCase({ imgUrl, title, text }) {
     return (
         <Center py={{ base: 3, lg: 0 }}>
             <Box
-                height={{ md: '600px', lg: '440px' }}
+                height={{  lg: '460px' }}
                 w={'full'}
                 className="showcase-card"
                 boxShadow={'2xl'}

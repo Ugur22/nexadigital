@@ -1,5 +1,5 @@
 import {
-    Box, Container, Flex, Heading, Icon, Stack, Text,
+    Box, Container, Flex, Heading, Icon, SimpleGrid, Stack, Text,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { FaStore, FaDesktop, FaPencilRuler, FaBug, FaRegListAlt, FaMobileAlt } from "react-icons/fa";
@@ -47,31 +47,32 @@ export default function ServicesBlock() {
     return (
         <Box p={4} color="brand.secondary" py={{ base: 10, md: 24 }}
             bg={'brand.tertiary'}>
-            <Stack spacing={4} as={Container} px={{ sm: 0, md: 8 }} maxW={'7xl'} textAlign={'left'}>
-                <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
+            <Stack as={Container} spacing={4} px={0} position={'relative'} maxW={'7xl'} textAlign={'left'}>
+                <Heading fontSize={{ base: 'xl', sm: 'xl' }} fontWeight={'bold'} >
                     Services
                 </Heading>
-                <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'} >
+                <Heading fontSize={{ base: '2xl', sm: '4xl' }} maxW={'3xl'} fontWeight={'bold'}>
+                    Transforming Your Digital Presence: Our Comprehensive Web Agency Services
+                </Heading>
+                <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'}>
                     We specialize in web development services to help you create and enhance your online presence. Our services include website design and development, e-commerce solutions, and search engine optimization to improve your website&#39;s visibility.
                 </Text>
             </Stack>
 
-            <Container maxW={'7xl'} mt={12}>
-                <Flex flexWrap="wrap" gridGap={6} justify="center">
-                    {serviceItems.map((service, index) => {
-                        return (
-                            <Card key={index}
-                                heading={service.title}
-                                icon={<Icon as={service.icon} w={10} h={10} />}
-                                description={
-                                    service.text
-                                }
-                                href={'#'}
-                            />
-                        )
-                    })}
-                </Flex>
-            </Container>
+            <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} maxW={'7xl'} mx={'auto'} my={6} gap={{ base: 3, lg: 6 }}>
+                {serviceItems.map((service, index) => {
+                    return (
+                        <Card key={index}
+                            heading={service.title}
+                            icon={<Icon as={service.icon} w={10} h={10} />}
+                            description={
+                                service.text
+                            }
+                            href={'#'}
+                        />
+                    )
+                })}
+            </SimpleGrid>
         </Box>
     );
 }
