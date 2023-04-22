@@ -69,7 +69,7 @@ export default function ShowCases() {
                 <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} maxW={'7xl'} mx={'auto'} my={6} gap={{ base: 3, lg: 6 }}>
                     {showcaseitems.map((post, index) => {
                         return (
-                            <ShowCase key={index} title={post.title} subtitle={post.subtitle} imgUrl={post.imageUrl} text={post.text} />
+                            <ShowCase key={index} title={post.title} imgUrl={post.imageUrl} text={post.text} />
                         )
                     })}
                 </SimpleGrid>
