@@ -69,7 +69,7 @@ export default function Technologies() {
                     <Heading fontSize={{ base: 'lg', sm: 'lg' }} fontWeight={'bold'} >
                         Enhancing Your Digital Footprint
                     </Heading>
-                    <Heading fontSize={{ base: '2xl', sm: '2xl' }} fontWeight={'bold'}>
+                    <Heading fontSize={{ base: '2xl', sm: '4xl' }} maxW={'3xl'} fontWeight={'bold'}  className="title-gradient">
                         Our Toolbox for Web Development
                     </Heading>
                     <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'3xl'}>

@@ -58,10 +58,10 @@ export default function ShowCases() {
                     <Heading fontSize={{ base: 'xl', sm: 'xl' }} fontWeight={'bold'} >
                         Showcases
                     </Heading>
-                    <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
+                    <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'} >
                         See Our Digital Solutions in Action.
                     </Heading>
-                    <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'}>
+                    <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'} >
                         NexaDigital specializes in creating custom digital solutions for businesses. Our portfolio features recent projects in web design, branding, social media management, and content creation. Take a look at our work to see how we have helped our clients succeed and grow.
                     </Text>
                 </Stack>

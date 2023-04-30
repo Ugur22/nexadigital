@@ -56,7 +56,7 @@ export default function Contact() {
                     </FormControl>
                     <FormControl isRequired>
                         <FormLabel fontWeight={'bold'}>Message</FormLabel>
-                        <Textarea placeholder='Here is a sample placeholder' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
+                        <Textarea resize={'none'} placeholder='Ask us a question' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
                     </FormControl>
                     <Button
                         rounded={'full'}

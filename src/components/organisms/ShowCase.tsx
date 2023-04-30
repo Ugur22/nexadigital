@@ -1,3 +1,4 @@
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 import {
     Box,
     Center,
@@ -5,6 +6,7 @@ import {
     Text,
     Stack,
     Link,
+    Icon,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
@@ -36,8 +38,7 @@ export default function ShowCase({ imgUrl, title, text }) {
                     />
                 </Box>
                 <Stack
-                    flexDirection={'column'}
-                    gap={4}>
+                   align={'start'} spacing={2} display={'flex'} flexDirection={'column'} gap={4}>
                     <Text
                         color={'brand.secondary'}
                         fontWeight={800}
@@ -48,26 +49,27 @@ export default function ShowCase({ imgUrl, title, text }) {
                     <Text color={'brand.secondary'} fontSize={'sm'} fontWeight={'500'}>
                         {text.substring(0, 140).concat('...')}
                     </Text>
+                    <Link rounded={'full'}
+                    href={'#'} variant={'link'} color={'brand.secondary'}
+                    fontWeight={'bold'}
+                    display={'flex'}
+                    mt={4}
+                    py={2}
+                    px={5}
+                    bg={'brand.primary'}
+                    transition="all .4s ease"
+                    _hover={{ textDecorationLine: 'none' }}>
+                    Learn more
                     <motion.div
-                        whileHover={{  x: 10 }}
-                        whileTap={{
-                            x: 10
-                        }}
+                      whileHover={{ x: 10 }}
+                      whileTap={{
+                          x: 10
+                      }}
                     >
-                        <Link rounded={'full'}
-                            px={6}
-                            py={2}
-                            w={'fit-content'}
-                            alignSelf={'right'}
-                            color={'brand.secondary'}
-                            fontWeight={'bold'}
-                            display={'flex'}
-                            bg={'brand.tertiary'}
-                            transition="all .4s ease"
-                            _hover={{ textDecorationLine: 'none' }}>
-                            Read case
-                        </Link>
+                        <Icon as={ArrowForwardIcon} boxSize={6} />
+
                     </motion.div>
+                </Link>
                 </Stack>
             </Box>
         </Center>

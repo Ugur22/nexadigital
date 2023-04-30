@@ -1,4 +1,5 @@
-import { Box, Link, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import { ArrowForwardIcon, PhoneIcon } from "@chakra-ui/icons";
+import { Box, Link, Flex, Heading, Stack, Text, IconButton, Button, Icon } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React, { ReactElement } from "react";
 
@@ -14,12 +15,9 @@ export default function Card({ heading, description, icon, href }: CardProps) {
         <Box className='card-service'
             maxW={{ base: 'full', md: '460px' }}
             w={'full'}
-            borderWidth="2px"
-            borderRadius="lg"
             overflow="hidden"
-            borderColor={'brand.secondary'}
-            p={5}>
-            <Stack align={'start'} spacing={2}>
+            p={8}>
+            <Stack align={'start'} spacing={2} display={'flex'} flexDirection={'column'} gap={4}>
                 <Flex
                     w={16}
                     h={16}
@@ -29,31 +27,35 @@ export default function Card({ heading, description, icon, href }: CardProps) {
                     bg={'white'}>
                     {icon}
                 </Flex>
-                <Box mt={2} color={'1e272e'}>
+                <Box mt={2} color={'#FFF'}>
                     <Heading size="md" >{heading}</Heading >
                     <Text mt={1} fontSize={'sm'} wordBreak={'break-all'}>
-                        {description.substring(0, 140).concat('...')}
+                        {description.substring(0, 120).concat('...')}
                     </Text>
                 </Box>
-                <motion.div
-                    whileHover={{ x: 10 }}
-                    whileTap={{
-                        x: 10
-                    }}
-                >
-                    <Link rounded={'full'}
-                        href={href} variant={'link'} color={'brand.tertiary'}
-                        mt={4}
-                        py={2}
-                        px={5}
-                        fontWeight={'bold'}
-                        display={'flex'}
-                        bg={'brand.secondary'}
-                        transition="all .4s ease"
-                        _hover={{ textDecorationLine: 'none' }}>
-                        Learn more
-                    </Link>
-                </motion.div>
+
+
+                <Link rounded={'full'}
+                    href={href} variant={'link'} color={'brand.secondary'}
+                    fontWeight={'bold'}
+                    display={'flex'}
+                    mt={4}
+                    py={2}
+                    px={5}
+                    bg={'brand.primary'}
+                    transition="all .4s ease"
+                    _hover={{ textDecorationLine: 'none' }}>
+                    Learn more
+                    <motion.div
+                      whileHover={{ x: 10 }}
+                      whileTap={{
+                          x: 10
+                      }}
+                    >
+                        <Icon as={ArrowForwardIcon} boxSize={6} />
+
+                    </motion.div>
+                </Link>
             </Stack>
         </Box>
     );

@@ -51,7 +51,7 @@ export default function ServicesBlock() {
                 <Heading fontSize={{ base: 'xl', sm: 'xl' }} fontWeight={'bold'} >
                     Services
                 </Heading>
-                <Heading fontSize={{ base: '2xl', sm: '4xl' }} maxW={'3xl'} fontWeight={'bold'}>
+                <Heading fontSize={{ base: '2xl', sm: '4xl' }} maxW={'3xl'} fontWeight={'bold'}  className="title-gradient">
                     Transforming Your Digital Presence: Our Comprehensive Web Agency Services
                 </Heading>
                 <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'}>
