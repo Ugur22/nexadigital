@@ -52,7 +52,6 @@ export default function FooterSection() {
     <Box
       boxShadow='dark-lg'
       background={"brand.secondary"}
-      position={router.pathname == "/" ? 'relative' : 'fixed'}
       bottom={0}
       width="100%"
       color={'white'}>
