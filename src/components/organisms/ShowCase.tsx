@@ -59,7 +59,7 @@ export default function ShowCase({ imgUrl, title, text }) {
                     bg={'brand.primary'}
                     transition="all .4s ease"
                     _hover={{ textDecorationLine: 'none' }}>
-                    Learn more
+                   Lees meer
                     <motion.div
                       whileHover={{ x: 10 }}
                       whileTap={{

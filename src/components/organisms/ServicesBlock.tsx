@@ -31,7 +31,7 @@ export default function ServicesBlock() {
                             description={
                                 service.text
                             }
-                            href={'#'}
+                            href={`${service.slug}`}
                         />
                     )
                 })}

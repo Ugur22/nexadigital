@@ -2,7 +2,7 @@ import { ArrowForwardIcon, PhoneIcon } from "@chakra-ui/icons";
 import { Box, Link, Flex, Heading, Stack, Text, IconButton, Button, Icon } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React, { ReactElement } from "react";
-import { useRouter } from "next/router"
+import NextLink from 'next/link'
 
 interface CardProps {
     heading: string;
@@ -12,7 +12,6 @@ interface CardProps {
 }
 
 export default function Card({ heading, description, icon, href }: CardProps) {
-    const router = useRouter()
 
     return (
         <Box className='card-service'
@@ -36,10 +35,8 @@ export default function Card({ heading, description, icon, href }: CardProps) {
                         {description.substring(0, 120).concat('...')}
                     </Text>
                 </Box>
-
-
                 <Link rounded={'full'}
-                   onClick={() => router.push(`/services/${href}`)} variant={'link'} color={'brand.secondary'}
+                as={NextLink} href={`/services/${href}`} variant={'link'} color={'brand.secondary'}
                     fontWeight={'bold'}
                     display={'flex'}
                     mt={4}
@@ -48,7 +45,7 @@ export default function Card({ heading, description, icon, href }: CardProps) {
                     bg={'brand.primary'}
                     transition="all .4s ease"
                     _hover={{ textDecorationLine: 'none' }}>
-                    Learn more
+                    Lees meer
                     <motion.div
                       whileHover={{ x: 10 }}
                       whileTap={{

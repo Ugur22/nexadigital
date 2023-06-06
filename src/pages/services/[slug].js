@@ -1,4 +1,3 @@
-import { useRouter } from "next/router"
 import { Container } from '@chakra-ui/react'
 import { servicesCollection } from '../../data/ServicesContent';
 import { Link, Icon, VStack, Heading, Text } from "@chakra-ui/react";
@@ -6,7 +5,6 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import NextLink from 'next/link'
 
 export default function Post(props) {
-  const router = useRouter()
   return (
     <Container maxW='7xl' marginY={5}>
       <VStack  spacing="2" alignItems="flex-start">
