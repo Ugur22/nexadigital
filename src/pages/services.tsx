@@ -1,45 +1,7 @@
 import { Box, Container, Heading, Icon, SimpleGrid, Stack,Text } from "@chakra-ui/react"
 import React from 'react'
 import Card from '../components/organisms/Card';
-import { FaStore, FaDesktop, FaPencilRuler, FaBug, FaRegListAlt, FaMobileAlt } from "react-icons/fa";
-
-const serviceItems = [
-  {
-      title: 'Custom web applicatons',
-      icon: FaDesktop,
-      text: "Transform your business with our custom web application development service, offering tailored solutions that automate processes, streamline workflows, and enhance user experiences using cutting-edge technologies and frameworks."
-  },
-  {
-      title: 'Web design',
-      icon: FaPencilRuler,
-      text: "We design websites that are visually appealing, user-friendly, and tailored to your brand. Our team uses the latest design trends and tools to create a functional and beautiful website that makes a lasting impression on your audience."
-
-  },
-  {
-      title: 'E-commerce',
-      icon: FaStore,
-      text: "We create customized e-commerce solutions that drive sales and grow your online business. Our user-friendly and visually appealing e-commerce websites have secure payment processing and seamless performance across all devices."
-
-  },
-  {
-      title: 'Website maintenance',
-      icon: FaBug,
-      text: "Our website maintenance service keeps your website running smoothly with ongoing support, backups, security checks, and updates. We identify areas for improvement and make changes as needed, so you can focus on your business."
-
-  },
-  {
-      title: 'CMS/CRM/ERP',
-      icon: FaRegListAlt,
-      text: "We develop customized CMS/CRM/ERP solutions that streamline your business processes. Our user-friendly and visually appealing systems integrate with your existing systems, enabling you to manage your content, customer relationships, and business operations more efficiently.."
-
-  },
-  {
-      title: 'Mobile apps',
-      icon: FaMobileAlt,
-      text: "We create visually appealing and optimized mobile apps that engage your customers on the go. Let us help you increase brand awareness and reach your audience wherever they are."
-
-  },
-]
+import { servicesCollection } from './../data/ServicesContent'
 
 export default function services() {
   return (
@@ -58,7 +20,7 @@ export default function services() {
     </Stack>
 
     <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} maxW={'7xl'} mx={'auto'} my={6} gap={{ base: 3, lg: 6 }}>
-        {serviceItems.map((service, index) => {
+        {servicesCollection.map((service, index) => {
             return (
                 <Card key={index}
                     heading={service.title}

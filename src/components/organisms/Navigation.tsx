@@ -216,19 +216,15 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
     {
-        label: 'Our mission',
+        label: 'Over ons',
         href: '/about',
     },
     {
-        label: 'Services',
+        label: 'Diensten',
         href: '/services',
     },
     {
-        label: 'Showcases',
-        href: '/showcases',
-    },
-    {
-        label: 'Request a quote',
+        label: 'Offerte aanvraag',
         href: '/quote',
     },
 ];

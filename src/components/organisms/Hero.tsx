@@ -30,7 +30,7 @@ export default function Hero() {
                             </Text>
                         </Heading>
                         <Text color={'white'} maxW={'3xl'}>
-                            NexaDigital - Your trusted web agency for web design, web development, SEO, digital marketing and more. Our tailored approach ensures we deliver the results you need to succeed online. Let us simplify your digital journey.
+                            NexaDigital - Jouw vertrouwde webbureau voor webdesign, webontwikkeling, SEO, digitale marketing en meer. Onze op maat gemaakte aanpak zorgt ervoor dat we de resultaten leveren die je nodig hebt om online succesvol te zijn. Laat ons je digitale reis vereenvoudigen.
                         </Text>
                         <Stack spacing={6} direction={'row'}>
                             <motion.button
@@ -49,7 +49,7 @@ export default function Hero() {
                                     alignItems={'center'}
                                     transition="all .4s ease"
                                     _hover={{ textDecorationLine: 'none' }}>
-                                    Contact Us
+                                    Neem contact op
                                 </Link>
                             </motion.button>
                             <motion.button
@@ -67,7 +67,7 @@ export default function Hero() {
                                     bg={'brand.tertiary'}
                                     transition="all .4s ease"
                                     _hover={{ textDecorationLine: 'none' }}>
-                                    Our Projects
+                                    Onze werk
                                 </Link>
                             </motion.button>
                         </Stack>

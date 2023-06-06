@@ -53,7 +53,9 @@ export default function FooterSection() {
       boxShadow='dark-lg'
       background={"brand.secondary"}
       bottom={0}
+      position={router.pathname == "/" || "services" ? 'relative' : 'fixed'}
       width="100%"
+      zIndex={999}
       color={'white'}>
       <Container
         as={Stack}

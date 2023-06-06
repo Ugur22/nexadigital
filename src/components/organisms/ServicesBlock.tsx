@@ -51,11 +51,11 @@ export default function ServicesBlock() {
                 <Heading fontSize={{ base: 'xl', sm: 'xl' }} fontWeight={'bold'} >
                     Services
                 </Heading>
-                <Heading fontSize={{ base: '2xl', sm: '4xl' }} maxW={'3xl'} fontWeight={'bold'}  className="title-gradient">
-                    Transforming Your Digital Presence: Our Comprehensive Web Agency Services
+                <Heading fontSize={{ base: '2xl', sm: '4xl' }} maxW={'3xl'} fontWeight={'bold'} className="title-gradient">
+                    Het transformeren van jouw digitale aanwezigheid: Onze uitgebreide webbureaudiensten
                 </Heading>
                 <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'}>
-                    We specialize in web development services to help you create and enhance your online presence. Our services include website design and development, e-commerce solutions, and search engine optimization to improve your website&#39;s visibility.
+                    Wij zijn gespecialiseerd in webontwikkelingsdiensten om je te helpen bij het creëren en verbeteren van je online aanwezigheid. Onze diensten omvatten websiteontwerp en -ontwikkeling, e-commerce oplossingen en zoekmachineoptimalisatie om de zichtbaarheid van je website te verbeteren.
                 </Text>
             </Stack>
 

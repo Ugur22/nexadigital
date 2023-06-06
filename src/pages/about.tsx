@@ -1,53 +1,73 @@
-import { Box, Container } from "@chakra-ui/react"
+import {
+  Button,
+  Flex,
+  Heading,
+  Image,
+  Stack,
+  Text,
+  useBreakpointValue,
+} from '@chakra-ui/react';
 
-export default function About(props) {
+import StatsGridWithImage from '../components/organisms/StatsGridWithImage';
+
+export default function About() {
   return (
     <div>
-      <Box p={4} color="brand.secondary" py={{ base: 10, md: 10 }}>
-        <h2>About Us</h2>
-        <p>
-          Welcome to NexaDigital, a young and dynamic company specializing in website
-          and application development. Our company is based in the Netherlands, and we
-          are committed to delivering exceptional digital solutions that exceed our
-          clients expectations.
-        </p>
-        <p>
-          At NexaDigital, we believe that technology is the key to unlocking new
-          opportunities and driving growth in todays fast-paced business world. We are
-          passionate about leveraging our expertise and experience to help our clients
-          succeed in their respective industries.
-        </p>
-        <p>
-          Our team of skilled developers, designers, and project managers work closely
-          with each client to understand their unique needs and goals. We take a
-          personalized approach to every project, ensuring that our solutions are
-          tailored to meet the specific needs of each client.
-        </p>
-        <p>
-          Whether you`re looking to build a new website, develop a mobile application,
-          or optimize your digital marketing strategy, NexaDigital has the expertise and
-          skills to deliver results. Our team is dedicated to providing outstanding
-          service and support to ensure that your project is completed on time, within
-          budget, and to the highest standards of quality.
-        </p>
-        <p>
-          Thank you for considering NexaDigital as your partner for your next digital
-          project. We look forward to working with you and helping you achieve your
-          business goals.
-        </p>
-      </Box>
-    </div >
-  )
-}
-
-export async function getStaticProps() {
-  const response = await fetch("https://api.github.com/users/ugur22")
-  const data = await response.json()
-
-  return {
-    props: {
-      repoCount: data.public_repos
-    },
-    revalidate: 10
-  }
+      <Stack minH={'800px'} direction={{ base: 'column', md: 'row' }}>
+        <Flex p={8} flex={1} align={'center'} justify={'center'}>
+          <Stack spacing={6} w={'full'} maxW={'lg'}>
+            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+              <Text
+                as={'span'}
+                position={'relative'}
+                _after={{
+                  content: "''",
+                  width: 'full',
+                  height: useBreakpointValue({ base: '20%', md: '30%' }),
+                  position: 'absolute',
+                  bottom: 1,
+                  left: 0,
+                  bg: 'blue.400',
+                  zIndex: -1,
+                }}>
+                NexaDigital
+              </Text>
+              <br />{' '}
+              <Text color={'blue.400'} as={'span'}>
+                Digital made simple
+              </Text>{' '}
+            </Heading>
+            <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
+              Welcome to NexaDigital, a young and dynamic company specializing in website
+              and application development. Our company is based in the Netherlands, and we
+              are committed to delivering exceptional digital solutions that exceed our
+              clients expectations.
+            </Text>
+            <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+              <Button
+                rounded={'full'}
+                bg={'blue.400'}
+                color={'white'}
+                _hover={{
+                  bg: 'blue.500',
+                }}>
+                Create Project
+              </Button>
+              <Button rounded={'full'}>How It Works</Button>
+            </Stack>
+          </Stack>
+        </Flex>
+        <Flex flex={1} paddingRight={20}>
+          <Image
+            alt={'about us image'}
+            objectFit={'contain'}
+            src={
+             'img/undraw_team_work_k-80-m.svg'
+            }
+          />
+        </Flex>
+      </Stack>
+      <StatsGridWithImage />
+    </div>
+  );
 }
