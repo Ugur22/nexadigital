@@ -2,7 +2,6 @@ import Contact from '../components/organisms/Contact';
 import Hero from "../components/organisms/Hero"
 import ServicesBlock from '../components/organisms/ServicesBlock';
 import ShowCases from '../components/organisms/ShowCases';
-import Technologies from '../components/organisms/Technologies';
 
 export default function Home(props) {
   return (
@@ -10,7 +9,6 @@ export default function Home(props) {
       <Hero />
       <ServicesBlock />
       <ShowCases />
-      <Technologies />
       <Contact />
     </div>
   )

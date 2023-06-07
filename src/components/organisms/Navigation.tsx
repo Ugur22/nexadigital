@@ -220,6 +220,10 @@ const NAV_ITEMS: Array<NavItem> = [
         href: '/about',
     },
     {
+        label: 'Digitale oplossingen',
+        href: '/solutions',
+    },
+    {
         label: 'Diensten',
         href: '/services',
     },

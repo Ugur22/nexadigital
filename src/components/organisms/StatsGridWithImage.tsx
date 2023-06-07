@@ -36,7 +36,7 @@ export default function StatsGridWithImage() {
                         flex={1}
                         color={'gray.400'}
                         justify={{ lg: 'center' }}
-                        py={{ base: 4, md: 20, xl: 60 }}>
+                        py={{ base: 4, md: 20 }}>
                         <Box mb={{ base: 8, md: 20 }}>
                             <Text
                                 fontFamily={'heading'}
@@ -45,51 +45,24 @@ export default function StatsGridWithImage() {
                                 mb={3}
                                 fontSize={'xl'}
                                 color={'gray.500'}>
-                                Technology
+                                Versterk jouw digitale succes met NexaDigital
                             </Text>
                             <Heading
                                 color={'white'}
                                 mb={5}
                                 fontSize={{ base: '3xl', md: '5xl' }}>
-                                Our mission
+                                Onze missie
                             </Heading>
                             <Text fontSize={'xl'} marginY={2} color={'gray.400'}>
-                                At NexaDigital, we believe that technology is the key to unlocking new
-                                opportunities and driving growth in todays fast-paced business world. We are
-                                passionate about leveraging our expertise and experience to help our clients
-                                succeed in their respective industries.
+                                Bij NexaDigital geloven we sterk in de kracht van technologie om nieuwe kansen te ontsluiten en groei te stimuleren in de snelle zakelijke wereld van vandaag. Ons gepassioneerde team van ervaren ontwikkelaars, ontwerpers en projectmanagers werkt nauw samen met elke klant om hun unieke behoeften en doelen te begrijpen.
                             </Text>
                             <Text fontSize={'xl'} marginY={2} color={'gray.400'}>
-                                Our team of skilled developers, designers, and project managers work closely
-                                with each client to understand their unique needs and goals. We take a
-                                personalized approach to every project, ensuring that our solutions are
-                                tailored to meet the specific needs of each client.
+                                Met een persoonlijke aanpak leveren we op maat gemaakte oplossingen die voldoen aan de specifieke behoeften van elke klant. Of je nu een nieuwe website wilt bouwen, een indrukwekkende mobiele applicatie wilt ontwikkelen of je digitale marketingstrategie wilt optimaliseren, NexaDigital staat klaar om resultaten te behalen.
                             </Text>
-                            <Text fontSize={'xl'} marginY={2}  color={'gray.400'}>
-                                Whether you re looking to build a new website, develop a mobile application,
-                                or optimize your digital marketing strategy, NexaDigital has the expertise and
-                                skills to deliver results. Our team is dedicated to providing outstanding
-                                service and support to ensure that your project is completed on time, within
-                                budget, and to the highest standards of quality.
+                            <Text fontSize={'xl'} marginY={2} color={'gray.400'}>
+                                Ons toegewijde team zorgt voor uitstekende service en ondersteuning, zodat jouw project tijdig, binnen het budget en met de hoogste kwaliteit wordt afgerond. Bij NexaDigital streven we ernaar om onze klanten te helpen excelleren in hun branche en hun succesverhaal te realiseren.
                             </Text>
                         </Box>
-
-                        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                            {stats.map((stat) => (
-                                <Box key={stat.title}>
-                                    <Text
-                                        fontFamily={'heading'}
-                                        fontSize={'3xl'}
-                                        color={'white'}
-                                        mb={3}>
-                                        {stat.title}
-                                    </Text>
-                                    <Text fontSize={'xl'} color={'gray.400'}>
-                                        {stat.content}
-                                    </Text>
-                                </Box>
-                            ))}
-                        </SimpleGrid>
                     </Stack>
                     <Flex flex={1} />
                 </Stack>

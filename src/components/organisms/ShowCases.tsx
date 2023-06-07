@@ -19,7 +19,9 @@ export default function ShowCases() {
                         Bekijk onze digitale oplossingen in actie
                     </Heading>
                     <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'} >
-                        NexaDigital is gespecialiseerd in het creëren van digitale oplossingen op maat voor bedrijven. Ons portfolio bevat recente projecten op het gebied van webdesign, branding, beheer van sociale media en contentcreatie. Bekijk ons werk om te zien hoe we onze klanten hebben geholpen succesvol te zijn en te groeien.
+                        Bij NexaDigital hebben we met succes diverse ICT-oplossingen aan onze klanten geleverd. We hebben maatwerkapplicaties ontwikkeld die hun bedrijfsprocessen hebben geoptimaliseerd en de productiviteit hebben verhoogd. Onze expertise strekt zich uit tot het implementeren van geavanceerde systemen zoals ERP, CRM en documentbeheer.</Text>
+                    <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'} >
+                        We zijn trots op onze trackrecord van succesvolle ICT-oplossingen en kijken ernaar uit om jouw organisatie te ondersteunen bij het behalen van optimale resultaten.
                     </Text>
                 </Stack>
 

@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 
 import StatsGridWithImage from '../components/organisms/StatsGridWithImage';
+import Technologies from '../components/organisms/Technologies';
 
 export default function About() {
   return (
@@ -30,7 +31,7 @@ export default function About() {
                   bg: 'blue.400',
                   zIndex: -1,
                 }}>
-                NexaDigital
+                Over Ons
               </Text>
               <br />{' '}
               <Text color={'blue.400'} as={'span'}>
@@ -38,10 +39,7 @@ export default function About() {
               </Text>{' '}
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-              Welcome to NexaDigital, a young and dynamic company specializing in website
-              and application development. Our company is based in the Netherlands, and we
-              are committed to delivering exceptional digital solutions that exceed our
-              clients expectations.
+            Welkom bij NexaDigital, een jong en dynamisch bedrijf dat gespecialiseerd is in website- en applicatieontwikkeling. Ons bedrijf is gevestigd in Nederland en we zijn toegewijd aan het leveren van uitzonderlijke digitale oplossingen die de verwachtingen van onze klanten overtreffen.
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
               <Button
@@ -51,9 +49,8 @@ export default function About() {
                 _hover={{
                   bg: 'blue.500',
                 }}>
-                Create Project
+              ik wil een applicatie
               </Button>
-              <Button rounded={'full'}>How It Works</Button>
             </Stack>
           </Stack>
         </Flex>
@@ -68,6 +65,7 @@ export default function About() {
         </Flex>
       </Stack>
       <StatsGridWithImage />
+      <Technologies />
     </div>
   );
 }

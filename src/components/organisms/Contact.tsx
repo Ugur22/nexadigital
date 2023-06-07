@@ -29,7 +29,8 @@ export default function Contact() {
                         Neem contact op met ons
                     </Heading>
                     <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'} >
-                        Laat ons u helpen bij het bereiken van uw digitale doelen - vul het onderstaande formulier in en we nemen zo snel mogelijk contact met u op.                    </Text>
+                        Laat ons u helpen bij het bereiken van uw digitale doelen - vul het onderstaande formulier in en we nemen zo snel mogelijk contact met u op.
+                    </Text>
                     <Image
                         padding={4}
                         height={{ base: '200', lg: '100%' }}
