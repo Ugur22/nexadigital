@@ -63,7 +63,7 @@ export default function Navigation() {
                     direction={'row'}
                     spacing={6}>
                     <Button rounded={'full'} transition="all .4s ease" px={6} >
-                        Contact Us
+                        contact
                     </Button>
                 </Stack>
             </Flex>

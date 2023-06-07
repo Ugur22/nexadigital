@@ -24,16 +24,15 @@ export default function Contact() {
                 border={0}
                 borderRadius="lg" display={'flex'} flexDirection={{ base: 'column', lg: 'row' }} gap={5}>
 
-                <Box display={'flex'} flexDirection={'column'} gap={5} p={{base: 4}}>
+                <Box display={'flex'} flexDirection={'column'} gap={5} p={{ base: 4 }}>
                     <Heading as='h2' size='lg'>
-                        Get in Touch with Us
+                        Neem contact op met ons
                     </Heading>
                     <Text fontSize={{ base: 'sm', sm: 'lg' }} maxW={'4xl'} >
-                        Let us assist you in achieving your digital goals - fill out the form below and we will get back to you promptly.
-                    </Text>
+                        Laat ons u helpen bij het bereiken van uw digitale doelen - vul het onderstaande formulier in en we nemen zo snel mogelijk contact met u op.                    </Text>
                     <Image
                         padding={4}
-                        height={{base: '200', lg: '100%'}}
+                        height={{ base: '200', lg: '100%' }}
                         alignSelf={'flex-start'}
                         justifySelf={'flex-start'}
                         objectFit='contain'
@@ -41,22 +40,22 @@ export default function Contact() {
                         alt={"test"} title={"test"}
                     />
                 </Box>
-                <Box backgroundColor={'white'} padding={{base: 4, lg: 8}} borderRadius={{base: 0, md: 'lg'}} w={'100%'} display={'flex'} flexDirection={'column'} gap={4}>
+                <Box backgroundColor={'white'} padding={{ base: 4, lg: 8 }} borderRadius={{ base: 0, md: 'lg' }} w={'100%'} display={'flex'} flexDirection={'column'} gap={4}>
                     <FormControl isRequired>
-                        <FormLabel fontWeight={'bold'}>First name</FormLabel>
-                        <Input placeholder='First name' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
+                        <FormLabel fontWeight={'bold'}>Voornaam</FormLabel>
+                        <Input placeholder='Voornaam' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
                     </FormControl>
                     <FormControl isRequired>
-                        <FormLabel fontWeight={'bold'}>Last name</FormLabel>
-                        <Input placeholder='First name' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
+                        <FormLabel fontWeight={'bold'}>Achternaam</FormLabel>
+                        <Input placeholder='Achternaam' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
                     </FormControl>
                     <FormControl isRequired >
                         <FormLabel fontWeight={'bold'}>Email</FormLabel>
-                        <Input placeholder='First name' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
+                        <Input placeholder='Email' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
                     </FormControl>
                     <FormControl isRequired>
-                        <FormLabel fontWeight={'bold'}>Message</FormLabel>
-                        <Textarea resize={'none'} placeholder='Ask us a question' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
+                        <FormLabel fontWeight={'bold'}>Bericht</FormLabel>
+                        <Textarea resize={'none'} placeholder='stel ons een vraag' borderColor={'brand.secondary'} _hover={{ borderColor: 'none' }} />
                     </FormControl>
                     <Button
                         rounded={'full'}
@@ -66,7 +65,7 @@ export default function Contact() {
                         bg={'brand.primary'}
                         transition="all .4s ease"
                         _hover={{ bg: 'brand.secondary', color: 'white' }}>
-                        Send
+                        Verstuur
                     </Button>
                 </Box>
             </Box>
