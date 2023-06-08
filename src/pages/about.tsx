@@ -9,7 +9,7 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react';
 
-import StatsGridWithImage from '../components/organisms/StatsGridWithImage';
+import TextWithImage from '../components/organisms/TextWithImage';
 import Technologies from '../components/organisms/Technologies';
 
 export default function About() {
@@ -67,7 +67,7 @@ export default function About() {
           </Flex>
         </Stack>
       </Container>
-      <StatsGridWithImage />
+      <TextWithImage />
       <Technologies />
     </div>
   );

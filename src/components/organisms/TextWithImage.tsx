@@ -9,7 +9,7 @@ import {
     SimpleGrid,
 } from '@chakra-ui/react';
 
-export default function StatsGridWithImage() {
+export default function TextWithImage() {
     return (
         <Box bg={'gray.800'} position={'relative'}>
             <Flex
@@ -23,21 +23,21 @@ export default function StatsGridWithImage() {
                 position={'absolute'}
                 width={'50%'}
                 insetY={0}
-                right={0}>
+                left={0}>
+
                 <Flex
-                    bgGradient={'linear(to-r, gray.800 10%, transparent)'}
+                    bgGradient={'linear(to-l, gray.800 20%, transparent)'}
                     w={'full'}
                     h={'full'}
                 />
             </Flex>
-            <Container maxW={'7xl'} zIndex={10} position={'relative'}>
+            <Container maxW={'4xl'}  zIndex={10} marginInlineEnd={0} position={'relative'}  className="testiee">
                 <Stack direction={{ base: 'column', lg: 'row' }}>
-                    <Stack
-                        flex={1}
+                    <Stack 
                         color={'gray.400'}
                         justify={{ lg: 'center' }}
-                        py={{ base: 4, md: 20 }}>
-                        <Box mb={{ base: 8, md: 20 }}>
+                        py={{ base: 4, md: 10 }}>
+                        <Box mb={{ base: 8, md: 10 }}>
                             <Text
                                 fontFamily={'heading'}
                                 fontWeight={700}
@@ -59,12 +59,8 @@ export default function StatsGridWithImage() {
                             <Text fontSize={'xl'} marginY={2} color={'gray.400'}>
                                 Met een persoonlijke aanpak leveren we op maat gemaakte oplossingen die voldoen aan de specifieke behoeften van elke klant. Of je nu een nieuwe website wilt bouwen, een indrukwekkende mobiele applicatie wilt ontwikkelen of je digitale marketingstrategie wilt optimaliseren, NexaDigital staat klaar om resultaten te behalen.
                             </Text>
-                            <Text fontSize={'xl'} marginY={2} color={'gray.400'}>
-                                Ons toegewijde team zorgt voor uitstekende service en ondersteuning, zodat jouw project tijdig, binnen het budget en met de hoogste kwaliteit wordt afgerond. Bij NexaDigital streven we ernaar om onze klanten te helpen excelleren in hun branche en hun succesverhaal te realiseren.
-                            </Text>
                         </Box>
                     </Stack>
-                    <Flex flex={1} />
                 </Stack>
             </Container>
         </Box>
