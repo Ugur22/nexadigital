@@ -1,4 +1,4 @@
-import { FaBug, FaDesktop, FaMobileAlt, FaPencilRuler, FaRegListAlt, FaStore, FaCloud, api } from "react-icons/fa"
+import { FaBug, FaDesktop, FaMobileAlt, FaPencilRuler, FaRegListAlt, FaStore, FaCloud } from "react-icons/fa"
 import {BsSpeedometer2} from "react-icons/bs";
 import {AiFillApi} from "react-icons/ai";
 export const servicesCollection =
