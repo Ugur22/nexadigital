@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import {
     Stack,
     Container,
@@ -6,7 +5,6 @@ import {
     Flex,
     Text,
     Heading,
-    SimpleGrid,
 } from '@chakra-ui/react';
 
 export default function TextWithImage() {
@@ -18,10 +16,10 @@ export default function TextWithImage() {
                 display={{ base: 'none', lg: 'flex' }}
                 backgroundImage="url('img/aboutus.jpg')"
                 backgroundSize={'cover'}
-                backgroundPosition="center"
+                backgroundPosition="center top"
                 backgroundRepeat="no-repeat"
                 position={'absolute'}
-                width={'50%'}
+                width={{lg: '50%', xl: '70%'}}
                 insetY={0}
                 left={0}>
 
@@ -31,7 +29,7 @@ export default function TextWithImage() {
                     h={'full'}
                 />
             </Flex>
-            <Container maxW={'4xl'}  zIndex={10} marginInlineEnd={0} position={'relative'}  className="testiee">
+            <Container maxW={{lg: '50%',xl: '40%'}}  zIndex={10} marginInlineEnd={0} position={'relative'}>
                 <Stack direction={{ base: 'column', lg: 'row' }}>
                     <Stack 
                         color={'gray.400'}
@@ -66,48 +64,3 @@ export default function TextWithImage() {
         </Box>
     );
 }
-
-const StatsText = ({ children }: { children: ReactNode }) => (
-    <Text as={'span'} fontWeight={700} color={'white'}>
-        {children}
-    </Text>
-);
-
-const stats = [
-    {
-        title: '10+',
-        content: (
-            <>
-                <StatsText>Software modules</StatsText> for detailed monitoring and
-                real-time analytics
-            </>
-        ),
-    },
-    {
-        title: '24/7',
-        content: (
-            <>
-                <StatsText>Analytics</StatsText> enabled right in your dashboard without
-                history limitations
-            </>
-        ),
-    },
-    {
-        title: '13%',
-        content: (
-            <>
-                <StatsText>Farms</StatsText> in North America has chosen NewLife™ as
-                their management solution
-            </>
-        ),
-    },
-    {
-        title: '250M+',
-        content: (
-            <>
-                <StatsText>Plants</StatsText> currently connected and monitored by the
-                NewLife™ software
-            </>
-        ),
-    },
-];
